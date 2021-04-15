@@ -1,0 +1,909 @@
+ERROR   2021-01-16 10:50:09,633 [http-nio-8084-exec-7] controller.LoginController  - java.lang.ArithmeticException: / by zero
+ERROR   2021-01-16 14:08:50,312 [http-nio-8084-exec-70] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-16 14:16:31,553 [http-nio-8084-exec-81] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-16 14:31:48,402 [http-nio-8084-exec-98] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-16 14:32:19,525 [http-nio-8084-exec-101] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-16 14:42:39,887 [http-nio-8084-exec-148] controller.SearchController  - java.lang.NumberFormatException: empty String
+DEBUG   2021-01-17 18:54:23,137 [http-nio-8084-exec-69] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+DEBUG   2021-01-17 18:54:23,197 [http-nio-8084-exec-69] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2021-01-17 18:54:23,204 [http-nio-8084-exec-69] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {s}->https://accounts.google.com:443][total kept alive: 0; route allocated: 0 of 100; total allocated: 0 of 200]
+DEBUG   2021-01-17 18:54:23,291 [http-nio-8084-exec-69] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 0; route allocated: 1 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-17 18:54:23,298 [http-nio-8084-exec-69] org.apache.http.impl.execchain.MainClientExec  - Opening connection {s}->https://accounts.google.com:443
+DEBUG   2021-01-17 18:54:23,314 [http-nio-8084-exec-69] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to accounts.google.com/172.217.24.45:443
+DEBUG   2021-01-17 18:54:23,314 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Connecting socket to accounts.google.com/172.217.24.45:443 with timeout 0
+DEBUG   2021-01-17 18:54:23,434 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+DEBUG   2021-01-17 18:54:23,434 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+DEBUG   2021-01-17 18:54:23,434 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Starting handshake
+DEBUG   2021-01-17 18:54:24,067 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Secure session established
+DEBUG   2021-01-17 18:54:24,067 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated protocol: TLSv1.2
+DEBUG   2021-01-17 18:54:24,067 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+DEBUG   2021-01-17 18:54:24,067 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer principal: CN=accounts.google.com, O=Google LLC, L=Mountain View, ST=California, C=US
+DEBUG   2021-01-17 18:54:24,068 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer alternative names: [accounts.google.com, *.partner.android.com]
+DEBUG   2021-01-17 18:54:24,068 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  issuer principal: CN=GTS CA 1O1, O=Google Trust Services, C=US
+DEBUG   2021-01-17 18:54:24,081 [http-nio-8084-exec-69] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 192.168.1.32:50826<->172.217.24.45:443
+DEBUG   2021-01-17 18:54:24,082 [http-nio-8084-exec-69] org.apache.http.impl.execchain.MainClientExec  - Executing request POST /o/oauth2/token HTTP/1.1
+DEBUG   2021-01-17 18:54:24,082 [http-nio-8084-exec-69] org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+DEBUG   2021-01-17 18:54:24,083 [http-nio-8084-exec-69] org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+DEBUG   2021-01-17 18:54:24,089 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 >> POST /o/oauth2/token HTTP/1.1
+DEBUG   2021-01-17 18:54:24,089 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 >> Content-Length: 312
+DEBUG   2021-01-17 18:54:24,089 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+DEBUG   2021-01-17 18:54:24,089 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 >> Host: accounts.google.com
+DEBUG   2021-01-17 18:54:24,089 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG   2021-01-17 18:54:24,089 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+DEBUG   2021-01-17 18:54:24,090 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG   2021-01-17 18:54:24,090 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 >> "POST /o/oauth2/token HTTP/1.1[\r][\n]"
+DEBUG   2021-01-17 18:54:24,090 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 312[\r][\n]"
+DEBUG   2021-01-17 18:54:24,090 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+DEBUG   2021-01-17 18:54:24,090 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 >> "Host: accounts.google.com[\r][\n]"
+DEBUG   2021-01-17 18:54:24,090 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2021-01-17 18:54:24,091 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+DEBUG   2021-01-17 18:54:24,091 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2021-01-17 18:54:24,091 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+DEBUG   2021-01-17 18:54:24,091 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 >> "client_id=1024742275610-uepvrsiau3kpuqfm4a9tbd2a9nrt83e5.apps.googleusercontent.com&client_secret=-4aEZ2_EolLHTRWSZcZzcdxT&redirect_uri=http%3A%2F%2Flocalhost%3A8084%2FHana_Shop%2FLoginGoogleController&code=4%2F0AY0e-g7LXIFdFTy6rlCsZhuk3rO4RqKKRKFRuo4WGf0ooWzmI3p59PsjKn065RYPWzRD-Q&grant_type=authorization_code"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Date: Sun, 17 Jan 2021 11:54:25 GMT[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Vary: Origin[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Vary: X-Origin[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Vary: Referer[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Server: scaffolding on HTTPServer2[\r][\n]"
+DEBUG   2021-01-17 18:54:24,240 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "[0x1f][\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "[0x8b][\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "[0x8][\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "0001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 18:54:24,241 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "3bf[\r][\n]"
+DEBUG   2021-01-17 18:54:24,242 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "[0x0][0x0][0x0][0x0][0x2][0xff]u[0x91][0xc9]r[0xa3]H[0x14]E[0xf7][0xf5][0x15][0xe][0xaf][0xdb]6S[0xca][0xa6]vB [0x6][0x89]D[0x88][0x99][\r][0x1][0x99][0x8][0x12][0x1][0xc2][0xc]BP[0xd1][0xff][0xde] /j[0xd5][0xab][0x8c]x[0xc3]}[0xf7][0xdc][0xfc][0xf3][0xeb][0xe5][0xe5]5F([0xed][0xba][0xa8][0xbf]][0xd3][0xfa][0xf5][0xf7][0xcb][0xeb][0x14]3[0xfc]{Lm/[0xca][0xc6][0xd2]w[0xd2]Q[0xc0]s<G[0xc9]'[0xa0][0x13]`[0xdd]A#[0xfb][0xe2][0xb6][0xa3]6[0xe5]c[0xda]H[0xc2][0x96]M[0xcb][0xf0]j[0x9][0x82][0x19]t[0x93][0xfd][0xed]*[0xc4][0xc][0xd9][0xb7]-[0xe7][0x9d][0xcc][0xac]U[0xe]fa[0xb3][\r][0x89][0x99]p?&[0x1][0xbc]8~[0xa3]{[0x81][0x1]'J[0xde]He?Aw[0xe7][0x1c][0xae][0x97]d[0x92][0xf5]3[0x7][0xa8]G[0xe7][0xde][0x4]q[0xaf]T[0xb9][0xa5][0x9]{)[0xb]H[0x8e]'y[0xe3]`[0xa3][0xf4][0xa7][0xdd][0x16]HM[0xa7][0xa0][0xe4][g[0xc4]7[0xce]G[0x19][0xca][0xde][0xa2][0xbe][0xbd][0x9e][0xb2][0xd7]V[0x8e][0xf4][0xd1][0x90]6[0xed]"[0xb2]R[0xb0][0x80][0xe7][0x9f][0xd5][0xe][0xdd][0x9a]t[0xc5][0xca][0xfb][0xbe][0xe9]~|[0x8c][0xe3][0xf8][0x9e][0xdd]nY[0x99][0xc6][\r][0xe9][0xde][0xd1][0xad][0xfa][0x88][0x87]>[0xff][0x18][0xba][0xb4]%[0xf5][0xe5][0xf6][0x9e]V1)_[0x96][0xad][0x9a][0xe0][0x1f][0xe5]g4Q?[0xfd][0x8][0x9]i[0xdc][0xa6][0xed]O[0x87][0xe0][0xbf][0xb9][0xa5][0x93][0x96]'2"[0x6][0xd1],gViH[0xd4]N[0xad][0xfa]&[0xdc][0xa9][0x1b][0xb5]@[0x9c][0xce][0xb8][0x85].[0xea][0x8f]`v@hK[0x8f][0xb0]Xf[0x18]s[0xc]=[0xfd][0x1]m[0xf4][0x80][0xb2][[0xc1]b[0xcb][0x6][0x8c][0xc3][0x4][0xb6][0x96][0xc3]* [0xc7][0x9d]F[0xa5][0xfe]v[0xd5]<[0xb8][0xb4]I.[0xe6][0xfb]r[0xa6]A[0xac][0xbe][0x96][0xf2][0x80][0x81]w[0xec][0x1][\n]"
+DEBUG   2021-01-17 18:54:24,293 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "M[0xa0]N[0x18][0xbe]Ndg[0x8][0x18][0xbe]W[0xc9]H[0x2][0xbf][0x19][0xd5][0xe2]Ft{;A[0x11]Qz[0xa1][0xb2][0xd0][0xe][0x1e][0xfa][0x8e][0xa6]C_`P[\r][0x9b][0xc0]w[0xe6][0x98][0x15]h[0xe4][0x85]=[0x94]%[0x80]e[0xed][0xaa]W[0x12]Hj[0x8d]2DXB[0xb][0xe4]H[0x11][0xe6]c[0x85][0xef][0x9][0x83][0xbb][0xd0]w[0xe7][0xd0][0xd7][0x8a][0x84][0x1]T[0xb8][0xdc]=V[0xf0][0x9e]X+[0xe6][0x9e][0xfe][0xc1][0x94]F[0xbd]0Y([0xaa][0x13][0x9c][0x1d]f[0xb9][0xdd]c[0xcf][0x1d]q[0xad][0xcd][0xb1][0xb7][0xa7]u[0xa6][0x1f][0xb1][0xbf][0xaf][0x12][0xfb][0x9c][0x1b][0xfe][0x99][0x84][0xa2][0x96][0x1b][0x1e][0x98][0xb0][0x98][0xcd][0xa1][0xbd]x[0xf7][0x85][0xf1]/[0x8b]K#[0xc6][0x9d][0x16][0x9e][0x1][0xcb][0xee][0x80]w`[0xb9]K[0xad][0x91][0xcc][0xd8]S[0x17]~[0xf5][0xa1]/<[0x86][0xb8][0xdc][0x9b][0xd1][0xf2][0xaa][0xdc][0xf2]r[0xb][0xeb][0xe2][0x1][0xad]s[0xb7][0xa7][0xa7]*[0x1c][0x97][0xdd]2T[0x9c][0x1]W[0xdc]Z/[0x13]o[0xdf]$[0xcf][0xde][0x83][0xe][0x16][0xe]\[0xc3]R[0xb7][0xcd][0x87].^gS[0xfe][0x9f][0xf9]=[0xcf],[0xec]MX[0x95][0xe5][0xaa][0x8b][0x15][0x8d][0xe][0xad]5[0xe7][0xf3]%[0x96][0xf7]s[0xfc][0xd4][0x83]ggi[0xeb][0xa5]f[0xda][0x92][$[0xa5]{D[0xf4][0x92]g)[0xc0][0xb0]zzZ27[0x89]QHk6[0xdc][0xe2][0x9d][0x82][0x85][0xb3][0xe4][0xe7]rh[0xd9]_yt1[[0xea][[0x6][0xfa][0xd4][0xfb]![0x9][0xf2]:[0xe3]#[0xe2][0xea][0xa0]9[0xcc][0xfb][0x83]"
+DEBUG   2021-01-17 18:54:24,306 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG   2021-01-17 18:54:24,306 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Date: Sun, 17 Jan 2021 11:54:25 GMT
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Pragma: no-cache
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Vary: Origin
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Vary: X-Origin
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Vary: Referer
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Content-Encoding: gzip
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Server: scaffolding on HTTPServer2
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << X-XSS-Protection: 0
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << X-Frame-Options: SAMEORIGIN
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << X-Content-Type-Options: nosniff
+DEBUG   2021-01-17 18:54:24,307 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+DEBUG   2021-01-17 18:54:24,308 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+DEBUG   2021-01-17 18:54:24,330 [http-nio-8084-exec-69] org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+DEBUG   2021-01-17 18:54:24,355 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "[0xda]E[0xed][[0x4]>[0x87]i[0xf6][0xe7][0xf4][0xcd][0xa8];[0xca][0x19][0x83]O[[0x9a][0x15]{l[0xcc][0xe3]Wb[0x0] [0xd5][0xee][0xa1][0x13][0x95][0xfa][0xe]#[0xbe][0xc0][0xf8][0x9b][0xc8][0xb9][0xe4][0xb5][0x1b]Z[0xe6]:6[0xa7][0xe1]0[0xde][\r][0xd5][0x8d][0x85][0xac][0xdf][0xd0]S[0x3][0xea]ed[0xd5][0x88][0x91]iu#[0xc7]"JOM[0xc2]][0x3]0[0xdf]y[0xde][\n]"
+DEBUG   2021-01-17 18:54:24,355 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << ".[0xe8]K[0x91][0xc0][0xd7][0xe1][0xe0][0xe][0xb4][0xe1][0xf1][0x9c][0x6][0x8b][0xe][0x94][0xb1]sH[0xbe][0xee][0xe7][0x86][0x85]#[0x90]$[0xbf][0xb6][0x18][0xda][0x7]w7[0xde][0x1][0x9d][0xf0]Iv[0x1f][0x93][0xd6]N[0x88][0xe1][0xf7]c[0xfe][0xa6]R[0xa7]tX>[0xfc][0xac]$[0xa0][0x8b][0xce][0xa7] [0x9e]2-[0xd0][0xa8][0xa6][0x11][0xbf][0xb7][0xbe][0x8f][0xe9][0xc8][0xa8]i=[0xf2][0xe1]f[0xac]S[0xde]V[0x8e][0x9f][0xad][0x9e]][0xc3]YVge[0xd0][0xd4][0x8][0xa5][0xe8][0xf3][0xcb]:[0xb6][0xce][0xa4][0xa2]lww[0xf1][0x9e]K[0xe1][0xd0][0xb2][0xd3].[0xb7]d[0xd1][0xae]Gb2[0x11][0xbe]y[0xe3]eK[0xbc]{y[0xc3][0x8a]>[0xa8]i[0x92][0xab][\n]"
+DEBUG   2021-01-17 18:54:24,355 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "[0xa7][0xb3][0x11][0xc0]&[\r]sk3r[0x83]Q[0x9c][0xda] ?[0xed][0xcd][0xd7]_[0xff][0xfe][0x7][0xbe][0x85][0xb][0xb1][0xf9][0x4][0x0][0x0][\r][\n]"
+DEBUG   2021-01-17 18:54:24,356 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+DEBUG   2021-01-17 18:54:24,356 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+DEBUG   2021-01-17 18:54:24,357 [http-nio-8084-exec-69] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {s}->https://accounts.google.com:443] can be kept alive indefinitely
+DEBUG   2021-01-17 18:54:24,357 [http-nio-8084-exec-69] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 0
+DEBUG   2021-01-17 18:54:24,357 [http-nio-8084-exec-69] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-17 18:54:24,578 [http-nio-8084-exec-69] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+DEBUG   2021-01-17 18:54:24,578 [http-nio-8084-exec-69] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2021-01-17 18:54:24,578 [http-nio-8084-exec-69] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 0 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-17 18:54:24,579 [http-nio-8084-exec-69] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+DEBUG   2021-01-17 18:54:24,579 [http-nio-8084-exec-69] org.apache.http.impl.execchain.MainClientExec  - Opening connection {s}->https://www.googleapis.com:443
+DEBUG   2021-01-17 18:54:24,588 [http-nio-8084-exec-69] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to www.googleapis.com/64.233.189.95:443
+DEBUG   2021-01-17 18:54:24,588 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Connecting socket to www.googleapis.com/64.233.189.95:443 with timeout 0
+DEBUG   2021-01-17 18:54:24,666 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+DEBUG   2021-01-17 18:54:24,666 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+DEBUG   2021-01-17 18:54:24,666 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Starting handshake
+DEBUG   2021-01-17 18:54:24,832 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Secure session established
+DEBUG   2021-01-17 18:54:24,833 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated protocol: TLSv1.2
+DEBUG   2021-01-17 18:54:24,833 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+DEBUG   2021-01-17 18:54:24,833 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer principal: CN=upload.video.google.com, O=Google LLC, L=Mountain View, ST=California, C=US
+DEBUG   2021-01-17 18:54:24,833 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer alternative names: [upload.video.google.com, *.clients.google.com, *.docs.google.com, *.drive.google.com, *.gdata.youtube.com, *.googleapis.com, *.photos.google.com, *.upload.google.com, *.upload.youtube.com, *.youtube-3rd-party.com, bg-call-donation-alpha.goog, bg-call-donation-canary.goog, bg-call-donation-dev.goog, bg-call-donation.goog, upload.google.com, upload.youtube.com, uploads.stage.gdata.youtube.com]
+DEBUG   2021-01-17 18:54:24,833 [http-nio-8084-exec-69] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  issuer principal: CN=GTS CA 1O1, O=Google Trust Services, C=US
+DEBUG   2021-01-17 18:54:24,834 [http-nio-8084-exec-69] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 192.168.1.32:50827<->64.233.189.95:443
+DEBUG   2021-01-17 18:54:24,834 [http-nio-8084-exec-69] org.apache.http.impl.execchain.MainClientExec  - Executing request GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMCELBdzaz_b751b5Sv5pGXDAs06lxy6EBA3elZkSBBQYsyTqVHiQZ3-A4WPQgrHKQjT3pia2ZFwbYNfUXpMWYONy0G6EltyNVCUKkfbyGMR450xsVoBDFHmhSJBFEgYihdyG6UdOlXyCA5EpsHcbqM2D-4Xcgcg-_trkPg HTTP/1.1
+DEBUG   2021-01-17 18:54:24,834 [http-nio-8084-exec-69] org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+DEBUG   2021-01-17 18:54:24,834 [http-nio-8084-exec-69] org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+DEBUG   2021-01-17 18:54:24,834 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 >> GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMCELBdzaz_b751b5Sv5pGXDAs06lxy6EBA3elZkSBBQYsyTqVHiQZ3-A4WPQgrHKQjT3pia2ZFwbYNfUXpMWYONy0G6EltyNVCUKkfbyGMR450xsVoBDFHmhSJBFEgYihdyG6UdOlXyCA5EpsHcbqM2D-4Xcgcg-_trkPg HTTP/1.1
+DEBUG   2021-01-17 18:54:24,834 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 >> Host: www.googleapis.com
+DEBUG   2021-01-17 18:54:24,834 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 >> Connection: Keep-Alive
+DEBUG   2021-01-17 18:54:24,835 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+DEBUG   2021-01-17 18:54:24,835 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+DEBUG   2021-01-17 18:54:24,835 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 >> "GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMCELBdzaz_b751b5Sv5pGXDAs06lxy6EBA3elZkSBBQYsyTqVHiQZ3-A4WPQgrHKQjT3pia2ZFwbYNfUXpMWYONy0G6EltyNVCUKkfbyGMR450xsVoBDFHmhSJBFEgYihdyG6UdOlXyCA5EpsHcbqM2D-4Xcgcg-_trkPg HTTP/1.1[\r][\n]"
+DEBUG   2021-01-17 18:54:24,835 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 >> "Host: www.googleapis.com[\r][\n]"
+DEBUG   2021-01-17 18:54:24,835 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2021-01-17 18:54:24,835 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+DEBUG   2021-01-17 18:54:24,836 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2021-01-17 18:54:24,836 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 >> "[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Date: Sun, 17 Jan 2021 11:54:25 GMT[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Vary: Origin[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Vary: X-Origin[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Vary: Referer[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Server: ESF[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+DEBUG   2021-01-17 18:54:24,901 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+DEBUG   2021-01-17 18:54:24,902 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+DEBUG   2021-01-17 18:54:24,902 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+DEBUG   2021-01-17 18:54:24,902 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG   2021-01-17 18:54:24,902 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[\r][\n]"
+DEBUG   2021-01-17 18:54:24,902 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,902 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x1f][\r][\n]"
+DEBUG   2021-01-17 18:54:24,902 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,902 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x8b][\r][\n]"
+DEBUG   2021-01-17 18:54:24,903 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,903 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x8][\r][\n]"
+DEBUG   2021-01-17 18:54:24,903 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,903 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 18:54:24,903 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,903 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 18:54:24,903 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,903 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 18:54:24,903 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,904 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 18:54:24,904 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,922 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 18:54:24,922 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,922 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x2][\r][\n]"
+DEBUG   2021-01-17 18:54:24,922 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,922 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0xff][\r][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "M[\r][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x8f][\r][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "000001[\r][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0xcd][\r][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "b5[\r][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0xe][0x82]0[0x10][0x84][0xef]<[0x5][0xe1][0xac]-[0xf5][0xaf][0xe8]I4[0xc6][0x90][0x98][0x10]o[0xde][0x8c][0xc0]J+[0xd0][0xd6][0xb2][0xe5]b|w[0x5][0xa3]qN[0x93][0xcc][0xb7][0x9b][0x99][0x87][0xe7][0xfb][0x81],[0x82][0x95][0x1f]0[0xb6]`[0xd1][0x8c]s[0xce][0xa2]I[0xc4][0xf9][0xdb][0x86][0x13][0x1e][0x8c]z[0x0][0x9a][0x8b][0xac]{[0xa6]v[0x17][0x85]][0xb]l[0xc6][0xc2][0xe5]t}5H[0xa0]p[0xa4]S[0x1f][0xae][0x3]+[0xaf][0x12][0x8a][0xf3][0xf7][0x0][0xad][0x83]!12Gg[0xa1][0xff]![0x10]M[0xbb][0xa2][0xb4][0x16]sRj][0xd6][0xe0]Z[0xb0][0xb9]V[0x8][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "I[0xae][0x1b]:>[0xc4][0xbb],[0xd1][0xa7]{Z[0x1d]i[0xfc]S[0xf2][0xe7]c[0xba][0xd9][0xa7][0xdb][0xc4][0x8e][0xb3]dWQ#4jr3[0xe5][0xa7][0x86][0x18][0xf6][0xfc][0x95][0xf3][0x9e][0xde][0xb]\[0xd2][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[0x85][0xe9][0x0][0x0][0x0][\r][\n]"
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << HTTP/1.1 200 OK
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Date: Sun, 17 Jan 2021 11:54:25 GMT
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Pragma: no-cache
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Content-Type: application/json; charset=UTF-8
+DEBUG   2021-01-17 18:54:24,923 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Vary: Origin
+DEBUG   2021-01-17 18:54:24,924 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Vary: X-Origin
+DEBUG   2021-01-17 18:54:24,924 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Vary: Referer
+DEBUG   2021-01-17 18:54:24,924 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Content-Encoding: gzip
+DEBUG   2021-01-17 18:54:24,924 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Server: ESF
+DEBUG   2021-01-17 18:54:24,924 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << X-XSS-Protection: 0
+DEBUG   2021-01-17 18:54:24,924 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << X-Frame-Options: SAMEORIGIN
+DEBUG   2021-01-17 18:54:24,987 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << X-Content-Type-Options: nosniff
+DEBUG   2021-01-17 18:54:24,987 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+DEBUG   2021-01-17 18:54:24,987 [http-nio-8084-exec-69] org.apache.http.headers  - http-outgoing-1 << Transfer-Encoding: chunked
+DEBUG   2021-01-17 18:54:24,987 [http-nio-8084-exec-69] org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+DEBUG   2021-01-17 18:54:24,989 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "0[\r][\n]"
+DEBUG   2021-01-17 18:54:24,989 [http-nio-8084-exec-69] org.apache.http.wire  - http-outgoing-1 << "[\r][\n]"
+DEBUG   2021-01-17 18:54:24,989 [http-nio-8084-exec-69] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 1][route: {s}->https://www.googleapis.com:443] can be kept alive indefinitely
+DEBUG   2021-01-17 18:54:24,989 [http-nio-8084-exec-69] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-1: set socket timeout to 0
+DEBUG   2021-01-17 18:54:24,989 [http-nio-8084-exec-69] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+ERROR   2021-01-17 19:02:12,256 [http-nio-8084-exec-1] controller.SearchController  - java.lang.NumberFormatException: empty String
+DEBUG   2021-01-17 19:13:23,201 [http-nio-8084-exec-14] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+DEBUG   2021-01-17 19:13:23,248 [http-nio-8084-exec-14] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2021-01-17 19:13:23,254 [http-nio-8084-exec-14] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {s}->https://accounts.google.com:443][total kept alive: 0; route allocated: 0 of 100; total allocated: 0 of 200]
+DEBUG   2021-01-17 19:13:23,315 [http-nio-8084-exec-14] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 0; route allocated: 1 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-17 19:13:23,320 [http-nio-8084-exec-14] org.apache.http.impl.execchain.MainClientExec  - Opening connection {s}->https://accounts.google.com:443
+DEBUG   2021-01-17 19:13:23,329 [http-nio-8084-exec-14] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to accounts.google.com/216.58.220.205:443
+DEBUG   2021-01-17 19:13:23,329 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Connecting socket to accounts.google.com/216.58.220.205:443 with timeout 0
+DEBUG   2021-01-17 19:13:23,374 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+DEBUG   2021-01-17 19:13:23,375 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+DEBUG   2021-01-17 19:13:23,375 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Starting handshake
+DEBUG   2021-01-17 19:13:23,531 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Secure session established
+DEBUG   2021-01-17 19:13:23,531 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated protocol: TLSv1.2
+DEBUG   2021-01-17 19:13:23,531 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+DEBUG   2021-01-17 19:13:23,532 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer principal: CN=accounts.google.com, O=Google LLC, L=Mountain View, ST=California, C=US
+DEBUG   2021-01-17 19:13:23,532 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer alternative names: [accounts.google.com, *.partner.android.com]
+DEBUG   2021-01-17 19:13:23,532 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  issuer principal: CN=GTS CA 1O1, O=Google Trust Services, C=US
+DEBUG   2021-01-17 19:13:23,545 [http-nio-8084-exec-14] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 192.168.1.32:51396<->216.58.220.205:443
+DEBUG   2021-01-17 19:13:23,546 [http-nio-8084-exec-14] org.apache.http.impl.execchain.MainClientExec  - Executing request POST /o/oauth2/token HTTP/1.1
+DEBUG   2021-01-17 19:13:23,546 [http-nio-8084-exec-14] org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+DEBUG   2021-01-17 19:13:23,548 [http-nio-8084-exec-14] org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+DEBUG   2021-01-17 19:13:23,551 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 >> POST /o/oauth2/token HTTP/1.1
+DEBUG   2021-01-17 19:13:23,551 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 >> Content-Length: 312
+DEBUG   2021-01-17 19:13:23,551 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 >> Host: accounts.google.com
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 >> "POST /o/oauth2/token HTTP/1.1[\r][\n]"
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 312[\r][\n]"
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 >> "Host: accounts.google.com[\r][\n]"
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+DEBUG   2021-01-17 19:13:23,552 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 >> "client_id=1024742275610-uepvrsiau3kpuqfm4a9tbd2a9nrt83e5.apps.googleusercontent.com&client_secret=-4aEZ2_EolLHTRWSZcZzcdxT&redirect_uri=http%3A%2F%2Flocalhost%3A8084%2FHana_Shop%2FLoginGoogleController&code=4%2F0AY0e-g5OikywHJj6JeIAbCBlRAQEz7eEIut9aZ_ZkNQkGIMTpV5S01QAsW1UATyDt1UfWA&grant_type=authorization_code"
+DEBUG   2021-01-17 19:13:23,716 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2021-01-17 19:13:23,716 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+DEBUG   2021-01-17 19:13:23,716 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+DEBUG   2021-01-17 19:13:23,716 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+DEBUG   2021-01-17 19:13:23,716 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Date: Sun, 17 Jan 2021 12:13:24 GMT[\r][\n]"
+DEBUG   2021-01-17 19:13:23,716 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG   2021-01-17 19:13:23,716 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Vary: Origin[\r][\n]"
+DEBUG   2021-01-17 19:13:23,716 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Vary: X-Origin[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Vary: Referer[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Server: scaffolding on HTTPServer2[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "[0x1f][\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "[0x8b][\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "[0x8][\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "003c3[\r][\n]"
+DEBUG   2021-01-17 19:13:23,717 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "[0x0][0x0][0x0][0x0][0x0][0x2][0xff]u[0x94]I[0x93][0xa2]J[0x14][0x85][0xf7][0xfd]+*j[0xfd][0xb4][0x18]Uz[0xa7]2K[0x82] [0xf3][0xc6][0x80]L[0x94]D&[0x5]d[0xe8]x[0xff][0xfd]A[0xd5][0xa2]Wou#n[0xde]<[0xe7]~'2[0xf2][0xcf][0xaf][0x8f][0x8f][0xcf][0x8][0xc2][0xa4]i[0xae]m[0xf5]H[0xca][0xcf][0xdf][0x1f][0x9f]cDq[0xeb][0x88][0xd8][0xdf][0xe4][0xcd][0x5][0xf0][0x8d]R[0xc9][0x94]y[0xde]o[0xdc]N[0xa9]n[0xee][0xa9][0x9f][0xca][0x89][0x88][0xd3][0x9][0x8]o[0x93][0xd0][0xb6][0x8e]HT[0xf1][0xcd]I[0xd5][0xde][0xbc][0xcb][0xc4][0xbe][0xdb][0x8a][0xce][0xe5][0x18][0x87][0x19][0xba]^[0xf2][0x9]6`[0xd4][0x1b][0x99][0xe6][0xfa][0x14][0xaf][0xc8][0xf0][0x82]Zb[0xea][0x9e][0xfb]4[0x81][0x7][0x97]3r[0xc6](F[0xe3][0x1c]9@[0xb3][0x8][0xb1][0x16]H[0xc6][0x17][0xee][0x16][0xba][0xc3][0x9d][0xdc][0xbf][0xb7][0xd4][0x9d]l,[0x9b]u[0xcd][0xca][0xaa][0x8b][0xf6][0x9d]c[0xbf]o[0xac][0xf3]j[0xa2][0xb9][0xbd]i[0xbb]c[0xc2]r+%[0xaf][0xbc][0x1d]VF[0xf0][0xf9][0xcf][0xc2][0x91][0xc]5~%[0xcd][0x15]/[0x14]4[0xcb]q[0xdf][0xdd][0x6]Vu[0xb2]`[0xcd][0xa5][0xc4][0xe8]#m[0xdb][0xba][0xf9][0xfd][0xf5][0xd5][0xf7][0xfd][0xfa]^U[0xf7]<[0x89]j[0xdc][0xac]aU|E][0x9b]~uM[0xf2][0xc2][0xe5][0xad]Z'E[0x84][0xf3][0x1f][0xe5][0xef]h[0xae][0xed][0xf8]#tH[0xa2]W[0xf2][0xfa]9[0xc1][0xe8]on[0xc9][0xa8][0xa6][0xb1][0x4][0xb1][0x81][0xd5][0x8b]3)[0xa4][0x8e][0x95]F)[0xda]:<*[0x1b]%[0x83][0xc][0xa0][0xdc][0xc][0xf0]`[0x8]&[0x87][\r]ma[0x8][0xb3]y[0x86]2[0xfb][0xd0][0x3][0x83]n[0xc3]A[0x97][0xdc]B[0xcf][0xf6]t@9T`[0xab][0xa9]^[0x4]X;[0xaa]D[0xe2][0xef][0x17][0xcd][0x93]K[0x9a][0xf8]f[0xae]g[0x9b][0x1a][0xd2]`i[0xa5][0x1][0xa5][0xbf][0x91][0xc7][0x12]pd[0xcb][0x98][0xe2][0xca]Xr[0xba][0x80][0xe2]Z[0x5][0xf7]8[0xf0][0xeb]^[0xc9]*[0xc][0xec][0xfd][0xa8][0xf3][0x90][0x0][0x99]B[0xeb]v0[0x80]#I[0x86][0xfe][0x81][0x82][0xa5]^[0x7][0xbe]3E[0xf4][0x81][0x84]^[0xd8][0xea][0x92][0xc0]"I}[0x80]B`[0xe3]R%[0xc]^[0xcf][0xf5][0xb][0x9b]B[0xf9]0i[0x5]z[0xc7][0x14]jB[0xdf][0x9d]B_[0xcd]b[0x8a]%[0xc2][0xd9]W+[0xf4]w|Y0E[0xf2][0x7]S[0xe8]Af[0xd2]:[0xaf][0x8c][0xfa][0xe4]P[0xb3]w[0x8b]<[0xb7]G[0xa5]:E[0x9e]H[0x2][0xaa][0xed][0x91]/[0x16][0xb1]m[0xa5][0x86]o[0xe1][0x90]WS[0xc3]cG[0xc4][0xdf][0xa7][0xd0][0x9e]w[0xf7][0xf][0xfd]_[0x16][0x97][0x84][0x94];[0xce]<[0x1d][0x92][0xdc][0xe][0x1d][0xd9][0xd9][0x97]X"[0x99][0x90][0xa7][0xcc][0xfc][0xca][0x0]f[0x1e][0x83][0x9f][0xfd]&8W[0x85][0x99]+3[0xb3][0xce];[0xc0]e[0xae][0xfa][0xde][0xa9][0x8][0xfb][0xf9]n[0x1e][0xca]N[0x87][\n]"
+DEBUG   2021-01-17 19:13:23,769 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "f[0xe9][0xe7][0xb1]'[0xd6][0xf1][0xf7][0xd9]@[0x6]3[0x7]*[0xf5][0x1c][0xd8][0xe6][0x0][0xf8][0xc7]dJ[0xff]3/r[0xd4][0xcc]^[0x87]E[0x9e]/[0xba]HV[0xe7]'[0xbd][0xe4]l[0xdd]"I[0x9c][0xa2]o~7[0xb5][0xb]K[0xf0]D8xB~[0x86][0xd9][0x83]5[0xe9][0xdc][0x2][0xbe]xssa[0xd1][0x9a]37[0xb1][0x91][0x9]K6[0x8c][0xc1][0xcf][0x19][0xf1][0xe6][0x9c][0x9f][0xcb][0xc0][0xf9][0xfe][0xc2][0x3][0xf8];c[0xd8]J[0xaf][0xcb][0xc4]Z)[0xb9]Vn[0x91]x[0xbf][0xaf]d[0xe2][0xc2][0xd1][0xb4]t[0xc9][0x9a][0x8a]"
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Pragma: no-cache
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Date: Sun, 17 Jan 2021 12:13:24 GMT
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Vary: Origin
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Vary: X-Origin
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Vary: Referer
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Content-Encoding: gzip
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Server: scaffolding on HTTPServer2
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << X-XSS-Protection: 0
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << X-Frame-Options: SAMEORIGIN
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << X-Content-Type-Options: nosniff
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+DEBUG   2021-01-17 19:13:23,779 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+DEBUG   2021-01-17 19:13:23,795 [http-nio-8084-exec-14] org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+DEBUG   2021-01-17 19:13:23,812 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "[\r][0x82]j[0x84][0xc3][0x98][0xc5][0xf8]4J[0x80]rb$[0xca]`[0x8b]E[0xa8]?[0xce][0x1c][0xcb]'[0xf0][0xba][0xd9][0x9][0xa7]mp[0xe6][0xc9][0x6]e^[0xd2]g[0xc1]N}[0x9e][0xef][0x91][0x8f][0xb7]i[0xb0]Ruh[0x86][0xdb]W[0xe7][0xf8]{[0xb5][0xe3]r[0xed][0x1a][0xb8]P[0xcd]W}[0x9c]#[0xe6]ty+[0xfe])[0xb0]{f2[0xb3][0xc9][0xee]3[0xc1]i3{[0xf][0x8b][0x9d][0x9b]8[0x87][0xa2][0xec][0xa4][0xb4][0xd3][0xa0])[0x13][0x9b][0xe9][0x95]([0x16][0xd0]xB[0x97]N[0xb2][0xcd]#"xP}L[0x1c]B[0x1f]k[0xc4][0x93][0xef][0xb2][0xf2]6[0x8]+#1[0xd1][0xb9]1[0x94]}[0xd2][0x19]u[0xa0]q"[0x11][0xef][0x1c][0x83][0xe5]nW[0xc8][0x92][0xd1][0x81][0x86][0xf0]Y[0x18][0x14][0xa8]E[0xef]4[0xa8][0x8e]=[0x1e][0xa3]#"[0xe6][0xef][0xe8][0x14]<[0x1b][0xca]f<u[0xcb][0xf8]O[0xc7][0x1a]5[0xee]R[0x94]g[0xa2][0x1d] [0x97][0xe6]lv[0x1a][0x18][0xb3]N[0xc4][0xd5]C[0xc4][0xf6][0xb5][0xf4]&y[0x10]O/[0x85]k2[0xb5]+[0xa8]Nc^[0x8a][0xa0][0xdd]V[0xc6][0xb1]f[0xdf]H[0xbd][0xe][0x8f][0xa6][0x1c]yi[0xe3][0xae][0x94]pz[0x99][0x9f][0xbf][0xfe][0xfd][0xf][0x2][0xdb][0x81][0xeb][0xf9][0x4][0x0][0x0][\r][\n]"
+DEBUG   2021-01-17 19:13:23,832 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+DEBUG   2021-01-17 19:13:23,832 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+DEBUG   2021-01-17 19:13:23,832 [http-nio-8084-exec-14] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {s}->https://accounts.google.com:443] can be kept alive indefinitely
+DEBUG   2021-01-17 19:13:23,832 [http-nio-8084-exec-14] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 0
+DEBUG   2021-01-17 19:13:23,833 [http-nio-8084-exec-14] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-17 19:13:24,010 [http-nio-8084-exec-14] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+DEBUG   2021-01-17 19:13:24,011 [http-nio-8084-exec-14] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2021-01-17 19:13:24,011 [http-nio-8084-exec-14] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 0 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-17 19:13:24,011 [http-nio-8084-exec-14] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+DEBUG   2021-01-17 19:13:24,011 [http-nio-8084-exec-14] org.apache.http.impl.execchain.MainClientExec  - Opening connection {s}->https://www.googleapis.com:443
+DEBUG   2021-01-17 19:13:24,020 [http-nio-8084-exec-14] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to www.googleapis.com/216.58.220.202:443
+DEBUG   2021-01-17 19:13:24,020 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Connecting socket to www.googleapis.com/216.58.220.202:443 with timeout 0
+DEBUG   2021-01-17 19:13:24,052 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+DEBUG   2021-01-17 19:13:24,052 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+DEBUG   2021-01-17 19:13:24,053 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Starting handshake
+DEBUG   2021-01-17 19:13:24,171 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Secure session established
+DEBUG   2021-01-17 19:13:24,171 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated protocol: TLSv1.2
+DEBUG   2021-01-17 19:13:24,171 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+DEBUG   2021-01-17 19:13:24,172 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer principal: CN=upload.video.google.com, O=Google LLC, L=Mountain View, ST=California, C=US
+DEBUG   2021-01-17 19:13:24,172 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer alternative names: [upload.video.google.com, *.clients.google.com, *.docs.google.com, *.drive.google.com, *.gdata.youtube.com, *.googleapis.com, *.photos.google.com, *.upload.google.com, *.upload.youtube.com, *.youtube-3rd-party.com, bg-call-donation-alpha.goog, bg-call-donation-canary.goog, bg-call-donation-dev.goog, bg-call-donation.goog, upload.google.com, upload.youtube.com, uploads.stage.gdata.youtube.com]
+DEBUG   2021-01-17 19:13:24,172 [http-nio-8084-exec-14] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  issuer principal: CN=GTS CA 1O1, O=Google Trust Services, C=US
+DEBUG   2021-01-17 19:13:24,174 [http-nio-8084-exec-14] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 192.168.1.32:51397<->216.58.220.202:443
+DEBUG   2021-01-17 19:13:24,174 [http-nio-8084-exec-14] org.apache.http.impl.execchain.MainClientExec  - Executing request GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMDsIoH2QPA6VuIofVKwznz0bhzMEvQ0L7UF0obfUhJwQgH0Au7FUSCbZjd_SlzcsMyNsH39whi-1ZSdt0zuqAhecBV9Ol4OmyOPaUMLR0FpE14XEgRdgc8Hwv72g1sRT5VQoRpmtvliXwsRP-z39AQTVye59-IloW8iIyM HTTP/1.1
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 >> GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMDsIoH2QPA6VuIofVKwznz0bhzMEvQ0L7UF0obfUhJwQgH0Au7FUSCbZjd_SlzcsMyNsH39whi-1ZSdt0zuqAhecBV9Ol4OmyOPaUMLR0FpE14XEgRdgc8Hwv72g1sRT5VQoRpmtvliXwsRP-z39AQTVye59-IloW8iIyM HTTP/1.1
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 >> Host: www.googleapis.com
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 >> Connection: Keep-Alive
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 >> "GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMDsIoH2QPA6VuIofVKwznz0bhzMEvQ0L7UF0obfUhJwQgH0Au7FUSCbZjd_SlzcsMyNsH39whi-1ZSdt0zuqAhecBV9Ol4OmyOPaUMLR0FpE14XEgRdgc8Hwv72g1sRT5VQoRpmtvliXwsRP-z39AQTVye59-IloW8iIyM HTTP/1.1[\r][\n]"
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 >> "Host: www.googleapis.com[\r][\n]"
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2021-01-17 19:13:24,175 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 >> "[\r][\n]"
+DEBUG   2021-01-17 19:13:24,236 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2021-01-17 19:13:24,236 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+DEBUG   2021-01-17 19:13:24,236 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Date: Sun, 17 Jan 2021 12:13:25 GMT[\r][\n]"
+DEBUG   2021-01-17 19:13:24,236 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+DEBUG   2021-01-17 19:13:24,236 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+DEBUG   2021-01-17 19:13:24,236 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG   2021-01-17 19:13:24,236 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Vary: Origin[\r][\n]"
+DEBUG   2021-01-17 19:13:24,236 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Vary: X-Origin[\r][\n]"
+DEBUG   2021-01-17 19:13:24,236 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Vary: Referer[\r][\n]"
+DEBUG   2021-01-17 19:13:24,236 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Server: ESF[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x1f][\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x8b][\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x8][\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 19:13:24,237 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,272 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-17 19:13:24,272 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,272 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x2][\r][\n]"
+DEBUG   2021-01-17 19:13:24,272 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,272 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0xff][\r][\n]"
+DEBUG   2021-01-17 19:13:24,273 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,273 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "M[\r][\n]"
+DEBUG   2021-01-17 19:13:24,273 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,273 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x8f][\r][\n]"
+DEBUG   2021-01-17 19:13:24,273 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,273 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0xcd][\r][\n]"
+DEBUG   2021-01-17 19:13:24,273 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,273 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0xe][\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x82][\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "0[\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x10][\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x84][\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0xef][\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "<[\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "01[\r][\n]"
+DEBUG   2021-01-17 19:13:24,274 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x5][\r][\n]"
+DEBUG   2021-01-17 19:13:24,275 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "ad[\r][\n]"
+DEBUG   2021-01-17 19:13:24,275 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0xe1][0xac]-[0xf5][0xaf][0xe8]I4[0xc6][0x90][0x98][0x10]o[0xde][0x8c][0xc0]J+[0xd0][0xd6][0xb2][0xe5]b|w[0x5][0xa3]qN[0x93][0xcc][0xb7][0x9b][0x99][0x87][0xe7][0xfb][0x81],[0x82][0x95][0x1f]0[0xb6]`[0xd1][0x8c]s[0xce][0xa2]I[0xc4][0xf9][0xdb][0x86][0x13][0x1e][0x8c]z[0x0][0x9a][0x8b][0xac]{[0xa6]v[0x17][0x85]][0xb]l[0xc6][0xc2][0xe5]t}5H[0xa0]p[0xa4]S[0x1f][0xae][0x3]+[0xaf][0x12][0x8a][0xf3][0xf7][0x0][0xad][0x83]!12Gg[0xa1][0xff]![0x10]M[0xbb][0xa2][0xb4][0x16]sRj][0xd6][0xe0]Z[0xb0][0xb9]V[0x8][\n]"
+DEBUG   2021-01-17 19:13:24,275 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "I[0xae][0x1b]:>[0xc4][0xbb],[0xd1][0xa7]{Z[0x1d]i[0xfc]S[0xf2][0xe7]c[0xba][0xd9][0xa7][0xdb][0xc4][0x8e][0xb3]dWQ#4jr3[0xe5][0xa7][0x86][0x18][0xf6][0xfc][0x95][0xf3][0x9e][0xde][0xb]\[0xd2][\n]"
+DEBUG   2021-01-17 19:13:24,335 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[0x85][0xe9][0x0][0x0][0x0][\r][\n]"
+DEBUG   2021-01-17 19:13:24,335 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << HTTP/1.1 200 OK
+DEBUG   2021-01-17 19:13:24,335 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+DEBUG   2021-01-17 19:13:24,335 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Date: Sun, 17 Jan 2021 12:13:25 GMT
+DEBUG   2021-01-17 19:13:24,335 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Pragma: no-cache
+DEBUG   2021-01-17 19:13:24,335 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+DEBUG   2021-01-17 19:13:24,335 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Content-Type: application/json; charset=UTF-8
+DEBUG   2021-01-17 19:13:24,335 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Vary: Origin
+DEBUG   2021-01-17 19:13:24,335 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Vary: X-Origin
+DEBUG   2021-01-17 19:13:24,336 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Vary: Referer
+DEBUG   2021-01-17 19:13:24,336 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Content-Encoding: gzip
+DEBUG   2021-01-17 19:13:24,336 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Server: ESF
+DEBUG   2021-01-17 19:13:24,336 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << X-XSS-Protection: 0
+DEBUG   2021-01-17 19:13:24,336 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << X-Frame-Options: SAMEORIGIN
+DEBUG   2021-01-17 19:13:24,336 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << X-Content-Type-Options: nosniff
+DEBUG   2021-01-17 19:13:24,336 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+DEBUG   2021-01-17 19:13:24,336 [http-nio-8084-exec-14] org.apache.http.headers  - http-outgoing-1 << Transfer-Encoding: chunked
+DEBUG   2021-01-17 19:13:24,336 [http-nio-8084-exec-14] org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+DEBUG   2021-01-17 19:13:24,337 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "0[\r][\n]"
+DEBUG   2021-01-17 19:13:24,337 [http-nio-8084-exec-14] org.apache.http.wire  - http-outgoing-1 << "[\r][\n]"
+DEBUG   2021-01-17 19:13:24,337 [http-nio-8084-exec-14] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 1][route: {s}->https://www.googleapis.com:443] can be kept alive indefinitely
+DEBUG   2021-01-17 19:13:24,337 [http-nio-8084-exec-14] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-1: set socket timeout to 0
+DEBUG   2021-01-17 19:13:24,337 [http-nio-8084-exec-14] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+ERROR   2021-01-17 19:13:37,364 [http-nio-8084-exec-19] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-18 11:08:11,010 [http-nio-8084-exec-85] controller.SearchController  - java.lang.NumberFormatException: empty String
+DEBUG   2021-01-18 15:05:01,882 [http-nio-8084-exec-22] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+DEBUG   2021-01-18 15:05:01,938 [http-nio-8084-exec-22] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2021-01-18 15:05:01,944 [http-nio-8084-exec-22] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {s}->https://accounts.google.com:443][total kept alive: 0; route allocated: 0 of 100; total allocated: 0 of 200]
+DEBUG   2021-01-18 15:05:01,998 [http-nio-8084-exec-22] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 0; route allocated: 1 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-18 15:05:02,002 [http-nio-8084-exec-22] org.apache.http.impl.execchain.MainClientExec  - Opening connection {s}->https://accounts.google.com:443
+DEBUG   2021-01-18 15:05:02,010 [http-nio-8084-exec-22] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to accounts.google.com/172.217.24.205:443
+DEBUG   2021-01-18 15:05:02,010 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Connecting socket to accounts.google.com/172.217.24.205:443 with timeout 0
+DEBUG   2021-01-18 15:05:02,133 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+DEBUG   2021-01-18 15:05:02,133 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+DEBUG   2021-01-18 15:05:02,134 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Starting handshake
+DEBUG   2021-01-18 15:05:02,298 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Secure session established
+DEBUG   2021-01-18 15:05:02,299 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated protocol: TLSv1.2
+DEBUG   2021-01-18 15:05:02,299 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+DEBUG   2021-01-18 15:05:02,300 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer principal: CN=accounts.google.com, O=Google LLC, L=Mountain View, ST=California, C=US
+DEBUG   2021-01-18 15:05:02,300 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer alternative names: [accounts.google.com, *.partner.android.com]
+DEBUG   2021-01-18 15:05:02,300 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  issuer principal: CN=GTS CA 1O1, O=Google Trust Services, C=US
+DEBUG   2021-01-18 15:05:02,332 [http-nio-8084-exec-22] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 192.168.1.33:51269<->172.217.24.205:443
+DEBUG   2021-01-18 15:05:02,332 [http-nio-8084-exec-22] org.apache.http.impl.execchain.MainClientExec  - Executing request POST /o/oauth2/token HTTP/1.1
+DEBUG   2021-01-18 15:05:02,332 [http-nio-8084-exec-22] org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+DEBUG   2021-01-18 15:05:02,334 [http-nio-8084-exec-22] org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+DEBUG   2021-01-18 15:05:02,339 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 >> POST /o/oauth2/token HTTP/1.1
+DEBUG   2021-01-18 15:05:02,339 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 >> Content-Length: 312
+DEBUG   2021-01-18 15:05:02,339 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+DEBUG   2021-01-18 15:05:02,339 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 >> Host: accounts.google.com
+DEBUG   2021-01-18 15:05:02,339 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG   2021-01-18 15:05:02,339 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+DEBUG   2021-01-18 15:05:02,339 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG   2021-01-18 15:05:02,340 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 >> "POST /o/oauth2/token HTTP/1.1[\r][\n]"
+DEBUG   2021-01-18 15:05:02,340 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 312[\r][\n]"
+DEBUG   2021-01-18 15:05:02,340 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+DEBUG   2021-01-18 15:05:02,340 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 >> "Host: accounts.google.com[\r][\n]"
+DEBUG   2021-01-18 15:05:02,340 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2021-01-18 15:05:02,340 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+DEBUG   2021-01-18 15:05:02,340 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2021-01-18 15:05:02,340 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+DEBUG   2021-01-18 15:05:02,341 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 >> "client_id=1024742275610-uepvrsiau3kpuqfm4a9tbd2a9nrt83e5.apps.googleusercontent.com&client_secret=-4aEZ2_EolLHTRWSZcZzcdxT&redirect_uri=http%3A%2F%2Flocalhost%3A8084%2FHana_Shop%2FLoginGoogleController&code=4%2F0AY0e-g7JeWpTJLLb48dKfsdsUrxBo3p8moE2ihFyhMbOPQl-M4PQcIFdIeV_AquvMNHLvQ&grant_type=authorization_code"
+DEBUG   2021-01-18 15:05:02,455 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2021-01-18 15:05:02,455 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+DEBUG   2021-01-18 15:05:02,455 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+DEBUG   2021-01-18 15:05:02,455 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+DEBUG   2021-01-18 15:05:02,455 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Date: Mon, 18 Jan 2021 08:05:02 GMT[\r][\n]"
+DEBUG   2021-01-18 15:05:02,455 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG   2021-01-18 15:05:02,455 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Vary: Origin[\r][\n]"
+DEBUG   2021-01-18 15:05:02,455 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Vary: X-Origin[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Vary: Referer[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Server: scaffolding on HTTPServer2[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "[0x1f][\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "[0x8b][\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "[0x8][\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "[0x0][\r][\n]"
+DEBUG   2021-01-18 15:05:02,456 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "0001[\r][\n]"
+DEBUG   2021-01-18 15:05:02,457 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "[0x0][\r][\n]"
+DEBUG   2021-01-18 15:05:02,457 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "3c0[\r][\n]"
+DEBUG   2021-01-18 15:05:02,457 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "[0x0][0x0][0x0][0x2][0xff]E[0x94]I[0x93][0xa2]J[0x14][0x85][0xf7][0xfd]+*j[0xfd][0xca][0x82][0x4]Tz[0xc7],h[0xa6][0xa8][0xc8][0xb4]![0x98][0x94]D&[0x1][0x99]:[0xde]PF[0xbc]^eD[0xe6][0xbd][0xe7][0xdc][0xef][0xdc][0x88][0xfc][0xf3][0xeb][0xe3][0xe3][0xd3][0xf][0xc3][0xb8]i[0xbc][0xb6]|[0xc4][0xc5][0xe7][0xef][0x8f][0xcf][0xd1][0x7][0xec][0xca]'[0xb8][0xdb]n}[0x81][0xdc][0xe9][0x9c][0xb0][0xb1]#[0xee]Te[0xb3][0xd1]N[0xdb][0x9d][0x9a][0x96][0x82][0xde][0x8f]b[0x93]{H[0xa1][0x12]t~==[0xcd][0xa3][0xf6]e[0xbd][0x9f][0x82]}[0xe1]q[0xd0][0xe2]}<8[0xfa][0x18][0x93][0xe6][0x98][0x1a][0x7]d[0x82][0xc][0x15][0x1][0xf]y[0xb2][0xd7][0xf7][0xa1][0x8c]n[0x3][0xdb]zt[0x1b][0xf7]e%[0x18][0x82][0x1c]}U[0xd9]t[0xd9][0x0]J[0xb5]{[0x0]e)[\n]"
+DEBUG   2021-01-18 15:05:02,459 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "t[0xbc][0x93][0x83][\r][0xad][J[0xe4]Og[0xa0][0xdd]D)[0xd4][0x8f]\[0x9b]t[0x99][0x18][0x1b][0xf4]a[0xdc][0x12][0x91][0xac]:[0x85]^V@3r[0xfa][0xf3][0x9f][0x85]#[0x1e]*\[0xc7][0x8d][0x87][0x17][\n]"
+DEBUG   2021-01-18 15:05:02,459 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "[0x8a]a[0xd9][0x9f][0xdb]&,[0xab]x[0xc1][0x9a][0x8f][0x2]G[0x1f]I[0xdb]V[0xcd][0xef][0xef][0xef][0xbe][0xef]W[0xf7][0xb2][0xbc]g[0xb1]_[0xe1]f[0x15][0x96][0xf9][0xb7][0xff]j[0x93][0xef]W[0x13][0xd7][0xb8][0xb8][0x95][0xab]8[0xf7]q[0xf6]V[0xfe][0x89][0xc6]k[0xc7][0xb7][0x10][0x1f][0xfb]u\[0xbf]_p[0xf4]7[0xb7]x[0xd4][0x92]@[0x9][0xf1][0x11]k[0x97][0xeb][0xa4][0x92][0x8][0xab][0x8d][0x9a][0xb7][0x95]+[0xa8]k5[\r]i[0x8][0xcc][0x14][0x8a]pp[0xa6]+[0xe3][0x1a][0xd2][0xe0][0xa6]s[\r]8[0xf5][0xae][0x5][0x7]d[0x84][0x3]R[0xcc][0x1c][0xa5][0x1c][0xe5][0x80]+p[0xc]-A[0xb9][0x83][0xf][0x82]F[0xc4]6[0xb7]h[0xee]M[0xf2][0x84]o[0xa7][0xd5]lS[0x85][0x14]\[0xae][0x12][0x7][0xa0].[0xb2][0x18]"[0x1c][0x99]"[0x0]l[0x11]([0xd7][0x97][0x3][0xd8]V[0xc5]=v[0xec][0xaa][0x9f][0x97][0x85][0xa1][0xc1][0x8d]H[0xc][0x9][0x98][0xaa][0x14]2[0x9c][0x1][\n]"
+DEBUG   2021-01-18 15:05:02,460 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "$[0xe9][0xda]<[0x8][0xb]T9[0xf6]u[0xf2])[0x9e][0xc]-[0xb7]E[0x8a][0xc4]D[0x8a][0xf6][0x80][0xb9][0xc4][0x4][0x85]F[0x1c]E[0x94][0xa1][0xb][0x93][0x84];~:[0xe4]Q[0x17][0x80][0xa8]qmsrm-[\r][0x0]C[0xb8][0xb3][0xef]!G]pY0e[0xf2][0x8d])[0xf5]0=QHTG4][0xc1][0xec][0xdd]F[0x96][0xd9]G[0x85]6[0xf9][0x96]LB[0xd0][0xf6][0x91]-[0xe7][0x81]qN[0x8e][0xf6][0x19][0xbb][0xa2][0x96][0x1c]-f[0x8c][0xc4][0xfb][0xe4][0x1a][0xf3][0xec]6[0xdf][0xff]e1[0xc9][0x10][0x98][0xe3][0xcc][0xf3][0x8a][0x14][0xf3][0x15][0x9][0xcc][0xec]K,[0x91]L[0x91][0xa5][0xce][0xfc][0xea][0x0][\r]u8[0x8a]w[0x12]M[0xe][0x81]R[0x87]<[0x8a]*[0x83]Ri[0x84][0xa9][0xb4][0xd4]e[0x81]%W[0xc1]2W[0xce][0x14][0x91][0x9d]eA[0xe1]&A>[0x90][0x8e]E[0xf][0xf3][0x8c][0x3][0xbc][0xf2][0xc5][0xbb][0xe6][0xed]w[0x8f][0xcc][0x82][0x99][0xb3]r[0xf3],[[0xb8][0xa2][0x9d]F[0xba][0x97]%[0xd3][0xf3][0xcd]W[0xe4][0xc9]_4[0x1f][0x8c]l[0x13][0xd5]!2[0xe7]yH[0xb3]>[0xdb][0xbc]}V[0xb6][0xa3][0x95]k[0xcf]8[0xfb][0xf1][0x9f][0xf3]=[0xe1]c*-90[0xcb][0x8a][0xa1][0xb8]de[0xd2][0xe1][0xdc][0xf][0x97]][0x88][0xf][0x0][0xc5][0xb0][0x87][0x5][0xb1][0xaa][0xaa]W"
+DEBUG   2021-01-18 15:05:02,469 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG   2021-01-18 15:05:02,469 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Pragma: no-cache
+DEBUG   2021-01-18 15:05:02,469 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+DEBUG   2021-01-18 15:05:02,470 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+DEBUG   2021-01-18 15:05:02,470 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Date: Mon, 18 Jan 2021 08:05:02 GMT
+DEBUG   2021-01-18 15:05:02,470 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+DEBUG   2021-01-18 15:05:02,470 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Vary: Origin
+DEBUG   2021-01-18 15:05:02,470 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Vary: X-Origin
+DEBUG   2021-01-18 15:05:02,470 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Vary: Referer
+DEBUG   2021-01-18 15:05:02,470 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Content-Encoding: gzip
+DEBUG   2021-01-18 15:05:02,470 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Server: scaffolding on HTTPServer2
+DEBUG   2021-01-18 15:05:02,470 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << X-XSS-Protection: 0
+DEBUG   2021-01-18 15:05:02,470 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << X-Frame-Options: SAMEORIGIN
+DEBUG   2021-01-18 15:05:02,521 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << X-Content-Type-Options: nosniff
+DEBUG   2021-01-18 15:05:02,521 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+DEBUG   2021-01-18 15:05:02,522 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+DEBUG   2021-01-18 15:05:02,550 [http-nio-8084-exec-22] org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+DEBUG   2021-01-18 15:05:02,573 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "[[0x8][0xa9]B[0x8b][0xaf][0xc0]|[0x1e][0x1c][0xa9][0xe1][0xfb][0x94][0xac][0x1f][0xcd]6j[0xf3]~[0xaa][0xb7]kR[0xda][0x6][0xa6]*[0xbb][0x87]Z[0xa0][0x99][0x89]e[0xaf][0xd5][0x93]k[0xa8][0x3]~Yl}[0xe1][0xef][0x1a]C[0x82]k7T[0xf7]]}i[0xbf][0x1e][0xf7][0xe6][0x91][0xbe] K[0x19][0x87][0xba][0xdc]^[0xc1][0xeb][0xb4][0xde][0x8f]l[0xc6][0xc5][0xbc]`o[0xb5]Q[0xa9][0xb5][0xa3][0xb5]W#[0xa2][0x95]Ov4[0xc4][0x14]m?`[0x1c][0xd3][0x83][[0xb4]*[0xa5]x[0x8f]N[0xd5][0x83][0x87]U[0xc0]}[0xcd]q][0xba][0xcd][0x84]5Sku[0xd2][0x1d][0x15][0xf5][0xac]\[0x5][0xae][0xdb]r[0x8][0xd3][0xeb][0x82][0xbe][0xe2][0x83]}[0xeb]tp[0xaa][0x15][0x99]k9E[0xbe][0x1b][0x8][0xe6][0x1b][0xeb]+[0x1d]#[0x1a]zmFo[0xb3][0x9e]K[0x8b][0xcb][0xf4][0x2][0xb2][0xae][0xeb][0x15][0x96][0xc4][0x8a][0xab]-[0x9f].[0x8b][0xd0][0x15][0xb3]s[0xd3][0x1b][0xeb][0x2]m[0x92]L[0x4]}rc6[0xc8]D[0xe5]Y\[0xab][0xcc]F|[0x10][0xfd][0xc8]c[0xaf][0xfa][0xe2][0xe4]'[0xbe]1[0xf9][0xdd][0xe7]<&>[0x8b][0x9b]{$w_[0x1b][0xe6][0xf8][0xd8][0x8c]U=([0xac][0xbf][0x9d]?[0x88].0v[0xc][0xc0][0x94]n[0xdb][0x90][0xdc][0xe8][0x83]p?}[0xfe][0xfa][0xf7]?[0xa0]S[0x11][0x86][0xe5][0x4][0x0][0x0][\r][\n]"
+DEBUG   2021-01-18 15:05:02,574 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+DEBUG   2021-01-18 15:05:02,574 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+DEBUG   2021-01-18 15:05:02,574 [http-nio-8084-exec-22] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {s}->https://accounts.google.com:443] can be kept alive indefinitely
+DEBUG   2021-01-18 15:05:02,575 [http-nio-8084-exec-22] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 0
+DEBUG   2021-01-18 15:05:02,575 [http-nio-8084-exec-22] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-18 15:05:02,748 [http-nio-8084-exec-22] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+DEBUG   2021-01-18 15:05:02,748 [http-nio-8084-exec-22] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2021-01-18 15:05:02,748 [http-nio-8084-exec-22] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 0 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-18 15:05:02,748 [http-nio-8084-exec-22] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+DEBUG   2021-01-18 15:05:02,748 [http-nio-8084-exec-22] org.apache.http.impl.execchain.MainClientExec  - Opening connection {s}->https://www.googleapis.com:443
+DEBUG   2021-01-18 15:05:02,757 [http-nio-8084-exec-22] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to www.googleapis.com/172.217.163.234:443
+DEBUG   2021-01-18 15:05:02,757 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Connecting socket to www.googleapis.com/172.217.163.234:443 with timeout 0
+DEBUG   2021-01-18 15:05:02,792 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+DEBUG   2021-01-18 15:05:02,792 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+DEBUG   2021-01-18 15:05:02,792 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Starting handshake
+DEBUG   2021-01-18 15:05:02,885 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Secure session established
+DEBUG   2021-01-18 15:05:02,886 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated protocol: TLSv1.2
+DEBUG   2021-01-18 15:05:02,886 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+DEBUG   2021-01-18 15:05:02,886 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer principal: CN=upload.video.google.com, O=Google LLC, L=Mountain View, ST=California, C=US
+DEBUG   2021-01-18 15:05:02,886 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer alternative names: [upload.video.google.com, *.clients.google.com, *.docs.google.com, *.drive.google.com, *.gdata.youtube.com, *.googleapis.com, *.photos.google.com, *.upload.google.com, *.upload.youtube.com, *.youtube-3rd-party.com, bg-call-donation-alpha.goog, bg-call-donation-canary.goog, bg-call-donation-dev.goog, bg-call-donation.goog, upload.google.com, upload.youtube.com, uploads.stage.gdata.youtube.com]
+DEBUG   2021-01-18 15:05:02,887 [http-nio-8084-exec-22] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  issuer principal: CN=GTS CA 1O1, O=Google Trust Services, C=US
+DEBUG   2021-01-18 15:05:02,888 [http-nio-8084-exec-22] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 192.168.1.33:51270<->172.217.163.234:443
+DEBUG   2021-01-18 15:05:02,888 [http-nio-8084-exec-22] org.apache.http.impl.execchain.MainClientExec  - Executing request GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMAQRh9eYDHIG77JQ8HIjoCPwyDsm_NG3hNRuq_J_3KorKzbKn_AMWBaixYPye1VyjTLNV2lNnbBMB1wPKcFNfx9t_4tewopCTCFd-plzS723IXw2MFEmqC4eHFb74PWGdazR2JfDEcPOAthvlDeT4Ly80dFIYnPop2JTm4 HTTP/1.1
+DEBUG   2021-01-18 15:05:02,888 [http-nio-8084-exec-22] org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+DEBUG   2021-01-18 15:05:02,888 [http-nio-8084-exec-22] org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 >> GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMAQRh9eYDHIG77JQ8HIjoCPwyDsm_NG3hNRuq_J_3KorKzbKn_AMWBaixYPye1VyjTLNV2lNnbBMB1wPKcFNfx9t_4tewopCTCFd-plzS723IXw2MFEmqC4eHFb74PWGdazR2JfDEcPOAthvlDeT4Ly80dFIYnPop2JTm4 HTTP/1.1
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 >> Host: www.googleapis.com
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 >> Connection: Keep-Alive
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 >> "GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMAQRh9eYDHIG77JQ8HIjoCPwyDsm_NG3hNRuq_J_3KorKzbKn_AMWBaixYPye1VyjTLNV2lNnbBMB1wPKcFNfx9t_4tewopCTCFd-plzS723IXw2MFEmqC4eHFb74PWGdazR2JfDEcPOAthvlDeT4Ly80dFIYnPop2JTm4 HTTP/1.1[\r][\n]"
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 >> "Host: www.googleapis.com[\r][\n]"
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2021-01-18 15:05:02,889 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 >> "[\r][\n]"
+DEBUG   2021-01-18 15:05:02,949 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2021-01-18 15:05:02,949 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+DEBUG   2021-01-18 15:05:02,949 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+DEBUG   2021-01-18 15:05:02,949 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Date: Mon, 18 Jan 2021 08:05:03 GMT[\r][\n]"
+DEBUG   2021-01-18 15:05:02,949 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Vary: Origin[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Vary: X-Origin[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Vary: Referer[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Server: ESF[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "[0x1f][\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "[0x8b][\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "[0x8][\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "01[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "b4[\r][\n]"
+DEBUG   2021-01-18 15:05:02,951 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "[0x0][0x0][0x0][0x2][0xff]M[0x8c][0xbd][0xe][0x82]0[0x18]Ew[0x9e][0x82]tVj+[0x94][0x9f]I[0x6][0x6][0x13][0x7][0x89][0xee][0xa6][0x81][0x8f]R[0x3]m[0x3]-[0xc6][0x18][0xdf][0xdd]T[0xa3][0xf1]N7[0xb9][0xe7][0x9e]G[0x10][0x86]H[0xb6][0xa8][0x8][0x11]![0x94]dY[0x92][0xb2][0x98][0xb1]$[0xa3]9#[0x94][0x12][0xb4][0xf2][0x0][0x8c]\[0xe][0x9e]Q[0xc2][0xdd]A-\[\r][0x8e]+[0x12]SBv[0xc2]oQ[0xa3][0xc7][0xf][0xba][0xc0]$;[0x9][0xed][0xe5][0xfb][0xb1][0x93][0x83][0xf7]bdc[0xdd][0x4]^[0xd3][k[0xe6][0x2][0xe3][0xa1][0xdf]FBk1[0x80][0x9b]aj[0xb4][0xb2][0xa0][0xac]w[0xe1][0xf5]1N[0xab]M[0xc5]G[0x9d][0xd7][0xb8][0xfc]e[0xff][0xd7]K|:[0xdf]Zv[0xa8]T[0x97][0xd4][0xd8][0xf4][0xda][0xea][0xe8]j[0x4][\n]"
+DEBUG   2021-01-18 15:05:02,959 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "[0x9e][0xc1][0xb][0x16][0x1d][0xa9]6[0xd6][0x0][0x0][0x0][\r][\n]"
+DEBUG   2021-01-18 15:05:02,959 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << HTTP/1.1 200 OK
+DEBUG   2021-01-18 15:05:02,959 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Pragma: no-cache
+DEBUG   2021-01-18 15:05:02,959 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+DEBUG   2021-01-18 15:05:02,959 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Date: Mon, 18 Jan 2021 08:05:03 GMT
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Content-Type: application/json; charset=UTF-8
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Vary: Origin
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Vary: X-Origin
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Vary: Referer
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Content-Encoding: gzip
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Server: ESF
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << X-XSS-Protection: 0
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << X-Frame-Options: SAMEORIGIN
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << X-Content-Type-Options: nosniff
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+DEBUG   2021-01-18 15:05:02,960 [http-nio-8084-exec-22] org.apache.http.headers  - http-outgoing-1 << Transfer-Encoding: chunked
+DEBUG   2021-01-18 15:05:02,961 [http-nio-8084-exec-22] org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+DEBUG   2021-01-18 15:05:02,961 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "0[\r][\n]"
+DEBUG   2021-01-18 15:05:02,961 [http-nio-8084-exec-22] org.apache.http.wire  - http-outgoing-1 << "[\r][\n]"
+DEBUG   2021-01-18 15:05:02,961 [http-nio-8084-exec-22] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 1][route: {s}->https://www.googleapis.com:443] can be kept alive indefinitely
+DEBUG   2021-01-18 15:05:02,961 [http-nio-8084-exec-22] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-1: set socket timeout to 0
+DEBUG   2021-01-18 15:05:02,962 [http-nio-8084-exec-22] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+ERROR   2021-01-18 22:11:02,936 [http-nio-8084-exec-61] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:19:30,550 [http-nio-8084-exec-157] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:19:33,178 [http-nio-8084-exec-146] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:25:41,353 [http-nio-8084-exec-180] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:25:43,202 [http-nio-8084-exec-167] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:25:46,548 [http-nio-8084-exec-178] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:25:48,336 [http-nio-8084-exec-179] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:34:06,785 [http-nio-8084-exec-188] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:34:07,221 [http-nio-8084-exec-189] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:34:28,431 [http-nio-8084-exec-198] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:36:27,763 [http-nio-8084-exec-202] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-18 23:36:32,459 [http-nio-8084-exec-210] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-19 00:02:54,041 [http-nio-8084-exec-289] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-19 00:03:43,903 [http-nio-8084-exec-296] paypal.ExecutePaymentServlet  - response-code: 500	details: name: INTERNAL_SERVICE_ERROR	message: An internal service error has occurred	details: null	debug-id: 83e1ed9046874	information-link: https://developer.paypal.com/docs/api/payments/#errors
+ERROR   2021-01-19 00:06:03,896 [http-nio-8084-exec-302] paypal.ExecutePaymentServlet  - java.lang.NullPointerException
+ERROR   2021-01-19 00:08:00,966 [http-nio-8084-exec-314] controller.CheckoutController  - java.lang.NullPointerException
+ERROR   2021-01-19 00:08:01,126 [http-nio-8084-exec-317] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-19 00:12:20,884 [http-nio-8084-exec-353] paypal.ExecutePaymentServlet  - response-code: 500	details: name: INTERNAL_SERVICE_ERROR	message: An internal service error has occurred	details: null	debug-id: 629fe6eba23ad	information-link: https://developer.paypal.com/docs/api/payments/#errors
+ERROR   2021-01-19 10:10:59,944 [http-nio-8084-exec-1] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-19 11:06:39,543 [http-nio-8084-exec-1] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-19 11:14:32,438 [http-nio-8084-exec-9] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-19 11:32:22,197 [http-nio-8084-exec-1] controller.GetAllOrderController  - java.lang.NullPointerException
+ERROR   2021-01-19 11:42:37,535 [http-nio-8084-exec-19] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: "2021-01-18"
+ERROR   2021-01-19 11:42:39,141 [http-nio-8084-exec-32] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: "2021-01-18"
+ERROR   2021-01-19 11:42:39,985 [http-nio-8084-exec-29] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: "2021-01-18"
+ERROR   2021-01-19 11:43:32,421 [http-nio-8084-exec-36] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: "2021-01-18"
+ERROR   2021-01-19 11:43:50,107 [http-nio-8084-exec-22] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: "2021-01-18"
+ERROR   2021-01-19 11:46:48,443 [http-nio-8084-exec-48] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: "2021-01-18"
+ERROR   2021-01-19 11:46:53,052 [http-nio-8084-exec-54] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: "2021-01-18"
+ERROR   2021-01-19 11:46:54,690 [http-nio-8084-exec-49] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: "2021-01-18"
+ERROR   2021-01-19 11:46:57,621 [http-nio-8084-exec-56] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: "2021-01-18"
+ERROR   2021-01-19 11:48:10,860 [http-nio-8084-exec-65] controller.SearchHistotyController  - java.lang.NullPointerException
+ERROR   2021-01-19 11:48:11,254 [http-nio-8084-exec-69] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-19 11:49:55,427 [http-nio-8084-exec-93] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: ""
+ERROR   2021-01-19 11:49:56,233 [http-nio-8084-exec-87] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: ""
+ERROR   2021-01-19 11:51:05,791 [http-nio-8084-exec-86] controller.SearchHistotyController  - java.text.ParseException: Unparseable date: ""
+ERROR   2021-01-19 21:25:12,078 [http-nio-8084-exec-6] controller.CreateFoodController  - java.lang.NumberFormatException: null
+ERROR   2021-01-19 22:53:54,628 [http-nio-8084-exec-105] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-20 08:18:05,790 [http-nio-8084-exec-6] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-20 10:29:03,169 [http-nio-8084-exec-6] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-20 20:44:24,774 [http-nio-8084-exec-18] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-20 20:44:45,928 [http-nio-8084-exec-16] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-20 20:44:46,861 [http-nio-8084-exec-15] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-20 20:44:57,596 [http-nio-8084-exec-27] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-20 20:45:03,549 [http-nio-8084-exec-17] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-20 20:45:09,033 [http-nio-8084-exec-25] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-20 20:46:31,323 [http-nio-8084-exec-1] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-20 20:47:56,486 [http-nio-8084-exec-22] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-20 20:48:27,324 [http-nio-8084-exec-18] controller.SearchController  - java.lang.NumberFormatException: empty String
+ERROR   2021-01-20 20:49:54,679 [http-nio-8084-exec-30] controller.SearchController  - java.lang.NullPointerException
+ERROR   2021-01-20 20:50:31,831 [http-nio-8084-exec-43] controller.SearchController  - java.lang.NullPointerException
+ERROR   2021-01-20 20:50:33,874 [http-nio-8084-exec-41] controller.SearchController  - java.lang.NullPointerException
+ERROR   2021-01-20 20:50:51,829 [http-nio-8084-exec-31] controller.SearchController  - java.lang.NullPointerException
+ERROR   2021-01-20 20:51:36,067 [http-nio-8084-exec-60] controller.SearchController  - java.lang.NullPointerException
+ERROR   2021-01-20 22:54:52,694 [http-nio-8084-exec-197] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-20 23:00:11,523 [http-nio-8084-exec-212] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 06:56:56,048 [http-nio-8084-exec-9] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 07:01:55,335 [http-nio-8084-exec-24] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 07:08:37,420 [http-nio-8084-exec-29] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 07:11:51,628 [http-nio-8084-exec-47] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 07:15:26,990 [http-nio-8084-exec-60] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 07:33:21,168 [http-nio-8084-exec-77] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 20:48:03,536 [http-nio-8084-exec-4] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-21 21:01:20,460 [http-nio-8084-exec-13] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 21:10:57,024 [http-nio-8084-exec-12] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 21:12:19,686 [http-nio-8084-exec-24] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 21:16:58,410 [http-nio-8084-exec-47] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 21:46:51,670 [http-nio-8084-exec-79] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 21:48:48,754 [http-nio-8084-exec-90] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 21:54:30,550 [http-nio-8084-exec-101] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 21:59:00,714 [http-nio-8084-exec-104] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 21:59:17,388 [http-nio-8084-exec-101] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:04:07,776 [http-nio-8084-exec-106] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:04:35,217 [http-nio-8084-exec-102] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:10:57,617 [http-nio-8084-exec-133] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:11:00,842 [http-nio-8084-exec-134] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:11:17,995 [http-nio-8084-exec-114] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:14:08,556 [http-nio-8084-exec-144] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:16:39,813 [http-nio-8084-exec-152] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:17:17,086 [http-nio-8084-exec-148] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:17:56,384 [http-nio-8084-exec-143] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:23:21,156 [http-nio-8084-exec-149] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:26:05,202 [http-nio-8084-exec-146] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:31:46,245 [http-nio-8084-exec-161] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:34:17,412 [http-nio-8084-exec-183] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:37:37,491 [http-nio-8084-exec-200] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:40:22,082 [http-nio-8084-exec-212] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:40:34,652 [http-nio-8084-exec-216] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:40:41,718 [http-nio-8084-exec-221] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 22:51:46,452 [http-nio-8084-exec-240] controller.CreateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-21 23:25:41,049 [http-nio-8084-exec-248] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-21 23:30:49,689 [http-nio-8084-exec-262] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-22 10:39:04,522 [http-nio-8084-exec-8] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-22 10:40:29,809 [http-nio-8084-exec-7] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-22 10:49:06,219 [http-nio-8084-exec-36] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-22 10:52:08,649 [http-nio-8084-exec-20] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-22 16:35:09,719 [http-nio-8084-exec-29] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 16:40:57,975 [http-nio-8084-exec-25] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 16:41:10,191 [http-nio-8084-exec-24] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:05:02,250 [http-nio-8084-exec-106] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-22 22:07:29,222 [http-nio-8084-exec-116] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:07:48,706 [http-nio-8084-exec-111] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:07:53,244 [http-nio-8084-exec-114] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:08:32,511 [http-nio-8084-exec-112] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:10:07,636 [http-nio-8084-exec-118] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:10:15,245 [http-nio-8084-exec-120] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:28:23,175 [http-nio-8084-exec-123] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:29:11,462 [http-nio-8084-exec-129] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:31:01,524 [http-nio-8084-exec-130] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:31:15,869 [http-nio-8084-exec-133] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:35:05,057 [http-nio-8084-exec-130] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:39:02,543 [http-nio-8084-exec-140] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:39:07,704 [http-nio-8084-exec-135] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:48:36,637 [http-nio-8084-exec-19] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:48:41,972 [http-nio-8084-exec-13] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:48:50,610 [http-nio-8084-exec-16] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:48:54,430 [http-nio-8084-exec-12] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:49:47,244 [http-nio-8084-exec-23] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 22:50:18,037 [http-nio-8084-exec-33] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 23:04:57,132 [http-nio-8084-exec-52] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 23:05:21,459 [http-nio-8084-exec-67] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 23:30:48,294 [http-nio-8084-exec-73] controller.CreateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 23:32:39,805 [http-nio-8084-exec-79] controller.CreateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 23:32:39,807 [http-nio-8084-exec-79] controller.CreateFoodController  - java.lang.NumberFormatException: For input string: "*9"
+ERROR   2021-01-22 23:36:33,596 [http-nio-8084-exec-80] controller.CreateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-22 23:36:33,596 [http-nio-8084-exec-80] controller.CreateFoodController  - java.lang.NumberFormatException: For input string: "*9"
+ERROR   2021-01-22 23:36:56,443 [http-nio-8084-exec-82] controller.CreateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-23 00:16:30,391 [http-nio-8084-exec-104] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-23 00:16:44,912 [http-nio-8084-exec-102] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-23 09:00:38,151 [http-nio-8084-exec-36] controller.UpdateFoodController  - java.io.FileNotFoundException: null\web\images\seven-up.jpg (The system cannot find the path specified)
+ERROR   2021-01-23 09:54:22,358 [http-nio-8084-exec-114] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+DEBUG   2021-01-23 11:40:44,298 [http-nio-8084-exec-9] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+DEBUG   2021-01-23 11:40:44,352 [http-nio-8084-exec-9] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2021-01-23 11:40:44,357 [http-nio-8084-exec-9] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {s}->https://accounts.google.com:443][total kept alive: 0; route allocated: 0 of 100; total allocated: 0 of 200]
+DEBUG   2021-01-23 11:40:44,425 [http-nio-8084-exec-9] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 0; route allocated: 1 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-23 11:40:44,431 [http-nio-8084-exec-9] org.apache.http.impl.execchain.MainClientExec  - Opening connection {s}->https://accounts.google.com:443
+DEBUG   2021-01-23 11:40:44,442 [http-nio-8084-exec-9] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to accounts.google.com/74.125.203.84:443
+DEBUG   2021-01-23 11:40:44,443 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Connecting socket to accounts.google.com/74.125.203.84:443 with timeout 0
+DEBUG   2021-01-23 11:40:44,562 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+DEBUG   2021-01-23 11:40:44,562 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+DEBUG   2021-01-23 11:40:44,562 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Starting handshake
+DEBUG   2021-01-23 11:40:44,949 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Secure session established
+DEBUG   2021-01-23 11:40:44,949 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated protocol: TLSv1.2
+DEBUG   2021-01-23 11:40:44,949 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+DEBUG   2021-01-23 11:40:44,950 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer principal: CN=accounts.google.com, O=Google LLC, L=Mountain View, ST=California, C=US
+DEBUG   2021-01-23 11:40:44,950 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer alternative names: [accounts.google.com, *.partner.android.com]
+DEBUG   2021-01-23 11:40:44,950 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  issuer principal: CN=GTS CA 1O1, O=Google Trust Services, C=US
+DEBUG   2021-01-23 11:40:44,961 [http-nio-8084-exec-9] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 192.168.1.16:53818<->74.125.203.84:443
+DEBUG   2021-01-23 11:40:44,962 [http-nio-8084-exec-9] org.apache.http.impl.execchain.MainClientExec  - Executing request POST /o/oauth2/token HTTP/1.1
+DEBUG   2021-01-23 11:40:44,962 [http-nio-8084-exec-9] org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+DEBUG   2021-01-23 11:40:44,963 [http-nio-8084-exec-9] org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+DEBUG   2021-01-23 11:40:44,966 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 >> POST /o/oauth2/token HTTP/1.1
+DEBUG   2021-01-23 11:40:44,966 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 >> Content-Length: 312
+DEBUG   2021-01-23 11:40:44,967 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+DEBUG   2021-01-23 11:40:44,968 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 >> Host: accounts.google.com
+DEBUG   2021-01-23 11:40:44,968 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG   2021-01-23 11:40:44,968 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+DEBUG   2021-01-23 11:40:44,968 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG   2021-01-23 11:40:44,969 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 >> "POST /o/oauth2/token HTTP/1.1[\r][\n]"
+DEBUG   2021-01-23 11:40:44,969 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 312[\r][\n]"
+DEBUG   2021-01-23 11:40:44,969 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+DEBUG   2021-01-23 11:40:44,969 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 >> "Host: accounts.google.com[\r][\n]"
+DEBUG   2021-01-23 11:40:44,969 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2021-01-23 11:40:44,970 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+DEBUG   2021-01-23 11:40:44,970 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2021-01-23 11:40:44,970 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+DEBUG   2021-01-23 11:40:44,970 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 >> "client_id=1024742275610-uepvrsiau3kpuqfm4a9tbd2a9nrt83e5.apps.googleusercontent.com&client_secret=-4aEZ2_EolLHTRWSZcZzcdxT&redirect_uri=http%3A%2F%2Flocalhost%3A8084%2FHana_Shop%2FLoginGoogleController&code=4%2F0AY0e-g7T3042aGmKKKmu-kVIpqDJ0Vyj9LmYFcVk34y3gm2UYPJz4tdUWX8g_XlIqdMvDw&grant_type=authorization_code"
+DEBUG   2021-01-23 11:40:45,104 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Date: Sat, 23 Jan 2021 04:40:45 GMT[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Vary: Origin[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Vary: X-Origin[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Vary: Referer[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Server: scaffolding on HTTPServer2[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x1f][\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x8b][\r][\n]"
+DEBUG   2021-01-23 11:40:45,105 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,106 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x8][\r][\n]"
+DEBUG   2021-01-23 11:40:45,106 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,106 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,106 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,106 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,106 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,106 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,106 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,106 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,106 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,112 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,112 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,112 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x2][\r][\n]"
+DEBUG   2021-01-23 11:40:45,112 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,112 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0xff][\r][\n]"
+DEBUG   2021-01-23 11:40:45,112 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "0001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,113 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "E[\r][\n]"
+DEBUG   2021-01-23 11:40:45,113 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "3ab[\r][\n]"
+DEBUG   2021-01-23 11:40:45,113 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x91][0xc9][0x92][0xa2]J[0x14][0x86][0xf7][0xfd][0x14][0x15][0xb5][0xbe]V[0x1][0x8a]J[0xef]@[0x6]A3[0x91]y[0xd8][0x18][0xcc][0xc9][0x94][0xa0]"S[0xc7]}[0xf7][0x8b]V[0xc4][0xed]]F[0xe6]9[0xff][0xf0][0xe5][0x9f]_[0x1f][0x1f][0x9f]A[0x14]%[0x8f][0xc7][0xb5]k[0xca][0x4][0xfe][0xfe][0xf8][0x9c][0x2][0x8a][0xf9]b[0x9]6=n[\r][0xc0]J[0xf3][0xb4][0x3][0xab][0xc2][0x1e]2I[0xd5]Q[0xc1][0xe][0xcd]m[0x15]n[0xb5][0x19]+[0x8e]d>[0xc9][0xaa]hx[0x97][0xbc][0xec][0x15][0xa1]6H7[0x15][0x14][0x9b]*S%s[0xc][0x16]o]!L[0x9b]Q7[0xf][0xd5][0xdc]LhD[0xfb][0xb5][0x1][0x94][0xea]vA8[0xe3][0xa5]*[0xb1]I[0xbd]<[0xdd][0xf][0xbb][0x1e]vH[0xdc][0x1d]b*[0xa0][0xe2]~[0xea][0x8e](U[0x92][0x8b]$[0xb6][0xbe][0x81][0xb4][0xa9][0x82][0x9b][0xbb][0xbc]&[0xef]'}[0xb1][0xe6][0x86][0xeb]\#[0xf3][0x94]~[0xfe][0xf3][\n]"
+DEBUG   2021-01-23 11:40:45,113 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x9e][0x8c]m~O[0x1e][0xd7][0xfc][0x15]{M3[0xcc][0xfb][0xf6][0x11]5m[0xf2][0xea][0x81][0xba][0xae]}[0xfc][0xfe][0xfe][0x1e][0x86][0xe1]+k[0x9a][0xac]J[0x82]6|EM[0xfd][0x1d]<;[0xf4][0xfd]|$[0xf7][0x1c][0xa7][0xcd]WR[0x7]y[0xf5][0xb1]l[0xe1]<[0xfe]Q~[0xb3][0xb8]v[0xd3][0x8f][0x10][0x97][0x4][0xf7][0xe4][0xfe][0xf3][0x92][0xc7]A%[0x93][0x82]B)[0xca][0xd5]\1[0xac]Y&a.?[0xe4][0xba]k[0xfd][0x83][0xbc][0x95]k[0xbb][0xf2]L1[0x7][0x8e]G[0x80]"[0x1b] %l<[\n]"
+DEBUG   2021-01-23 11:40:45,113 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x8c]`[0xf6][0x11][0xe0]![0x2][0xcb][0x19][0xd6][0xda][0xa4]:z[0xae][0xf2]2[\r]k[0x1d][0xf9][0x5][0x9b][0x9f][0xf][\n]"
+DEBUG   2021-01-23 11:40:45,114 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x91][0xb8][0xec]K[0xf3]d[0x93]Z[0x9e]j_[0x8b]M[0x1b][0xad][0xc1][0xeb][\n]"
+DEBUG   2021-01-23 11:40:45,114 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "y[0x14][0xec]c[0x87]&[0xa2][0x89][0xc6]![0xc5][0xe0]P[0xb2][0x9e][0x1e][0xc5]tr>[0xe4][0x9e][0xdb][0xe]r[0xd1][0xe4][0xc0]d'[0xc8]G[0x8b][0xad][0xbc][0x86][0xa6]7[0x82][0x3]I[0xfa].GE[0x18][0xb6][0x9e]k[0xcd][0xc1][0x9a]##[0xc7][0xef][0xa0]$[0xd0][0xb1][0xa4][0x94][0xa0][0x16][0xe8][0x10]+[0x84][0xca][0xc3][\n]"
+DEBUG   2021-01-23 11:40:45,114 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x1a]4[0x8a][0x8e][0xdc]|[0xae][0xe3]>[0xa4][0xe2][0x87][0xef][0xda][0xb3][0xef]*EH[0xd1][0x84][0xbf][0xf8][0x9e]k[0xd8][0x87][0xc6][0xab][0xa6]H[0xbe]k[0x16][0xc2][0x0][\n]"
+DEBUG   2021-01-23 11:40:45,114 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "m[\r]yy[0x82][0xb3]E-[0xde]][0xec][0xd8]C[0x8c][0x95]9pD[0x12]P[0xdd][0x10][0xbb]b[0x1d][0x9a]:R]=[0xf7]y[0x5][0xa9][0xe]=[0xc5]|6[0xfb][0xe6][0x92][0xdd][0xe5][0x86][0xbf]]l2[0xa2][0xec]i[0xe9][0xf3][0x8c]%[0xfb][0x19][0x1f][0xe8][0xc5][0x97]x![0x99]cG^[0xfa][0xcb]#0[0xe5]Q[0xe5]3[0x12][0xce][0x1e][0x1][0xb][0x8f]|[0xa3]+[0x84][0x9][0x14][0xc2]k[0xae][\n]"
+DEBUG   2021-01-23 11:40:45,114 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0x1d][0xb1][\r][0xdf][0xf8]i[0x1c][0xbb]U[0x15]b[0x1f][0x85][0xf5]Hz[0xce]f\2[0x8e][0xc0][0xe2][0xf0][0xcf][0xcc][0xff][0xda]?;"C-=[[0xbf][0xae][0xaa]W[0xaf][0xf8][0xa8][0x90][0xbe][0xf1]b[0xaa][0xa7][0x81]$[0xce][0xc1]"
+DEBUG   2021-01-23 11:40:45,184 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG   2021-01-23 11:40:45,184 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+DEBUG   2021-01-23 11:40:45,184 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Pragma: no-cache
+DEBUG   2021-01-23 11:40:45,184 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Date: Sat, 23 Jan 2021 04:40:45 GMT
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Vary: Origin
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Vary: X-Origin
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Vary: Referer
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Content-Encoding: gzip
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Server: scaffolding on HTTPServer2
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << X-XSS-Protection: 0
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << X-Frame-Options: SAMEORIGIN
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << X-Content-Type-Options: nosniff
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+DEBUG   2021-01-23 11:40:45,185 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+DEBUG   2021-01-23 11:40:45,207 [http-nio-8084-exec-9] org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+DEBUG   2021-01-23 11:40:45,226 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "K[0xb3][0x12]&[0xfb]X[0xb5][0xd0]b[0x1a][0xcd][0x12]o.[0x15]k[0x89]c[0xb7][0x8e]C[0x17]:[0xf1][0xf6]_[0xf8]j[0xb9]Z[0x8][0xb][0x7]a^2n o-[0xac][0xec]M[0xb4][0xec][0x83][0xd7]_[0x98]`[0x3]x[0x8d][0x80].[0xf1][0x15][0xd5]W[0x92][0x9e]8[0x9b]rE[0x94]b[0xca][0xc9][0xcc][0x9b][0xc2]xa[0x6][0xd4]q[0xc6][0x9d][0x1d][0xed][0xb9]}[0x9f][0x9e][0x8f]W[0xa6]{[0xd0]"[0xb2][0x9f][0x2][0x6][0x9][0xae][0xdb][0xb5][0xdd]7[0xea]H[0xad][0xd8][[0x9e]{[0x5][0xec]3[0xee]L[0xb0][0xe7][0x12][0x1f][0xcd]=[0xbc]ym[0xb6].-[0xc3]PM[0x96]aO[0xa8][0xf7].[0xe4]`e[0xc3]D[0xb0][0x15]JXR[0xc4][0xce][0x3][0xf8][0xa5]m[0xf4][0x5][0xe][0xaf][0xe7][0xe3]}wK*[0xc6][0xdf];e[0xb6][0xcf][0x82]s[0x19][0x94]^y[0xe2][0x98][0xa4][0xbd][0xae][0xb8][0x89]a[0xeb]a[[0xc5][0x1][0xb1][0xdd][0xf2][0xc8]Y[0xd1][0x8a]^[0x85][0xe0]X[0xe8][0xee]![0xd1][0xbb][0xa7]qB[0x7][0xeb]x[0xce]=/\[0xd2][0x1f][0xae]H[0xc0][0xa7][0xf8][0xc4]o[0x9e][0xf2]048[0xb6][0xc1][0x85][0xe8][0xa5][0x9d]y[0x15][0x86][0x6]z[0xb6][0x1c][0xe0][0xf3][0x8a][\r]M[0x8a][0xa6][0xac]kw[0xb5][0xd5][0x8b][0xde][0x96][0x1d][0xbc]1[0xce][0xd6][0x9f][0x83]{[0xbf][0xd3][0xe2][0x8b].[0x82][0xa8]p[0xca][0xc3][0xa5][0x8][0xef][0x91]x[0xb0][0xca][0xdd][0x19]s[0x84][0xab][0xdc]L[0xaa][0xe9][0xdb][0xa1][0x8d][0xa2]Xc[0xf5][0xb5]o[0xa2][0x94][\n]"
+DEBUG   2021-01-23 11:40:45,226 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[0xe8]c[0xb2][0xcb][0xf8][0x11]4{][0xe9][0x8b]@[0xb9][0xa5]RzC[0xeb][0xcb][0xf0][0xf9][0xeb][0xdf][0xff][0x0][0x1d][0xc2][0xe7][0xce][0xd6][0x4][0x0][0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,227 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+DEBUG   2021-01-23 11:40:45,227 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+DEBUG   2021-01-23 11:40:45,237 [http-nio-8084-exec-9] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {s}->https://accounts.google.com:443] can be kept alive indefinitely
+DEBUG   2021-01-23 11:40:45,237 [http-nio-8084-exec-9] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 0
+DEBUG   2021-01-23 11:40:45,238 [http-nio-8084-exec-9] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-23 11:40:45,452 [http-nio-8084-exec-9] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+DEBUG   2021-01-23 11:40:45,452 [http-nio-8084-exec-9] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2021-01-23 11:40:45,452 [http-nio-8084-exec-9] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 0 of 100; total allocated: 1 of 200]
+DEBUG   2021-01-23 11:40:45,452 [http-nio-8084-exec-9] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+DEBUG   2021-01-23 11:40:45,452 [http-nio-8084-exec-9] org.apache.http.impl.execchain.MainClientExec  - Opening connection {s}->https://www.googleapis.com:443
+DEBUG   2021-01-23 11:40:45,461 [http-nio-8084-exec-9] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to www.googleapis.com/64.233.188.95:443
+DEBUG   2021-01-23 11:40:45,461 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Connecting socket to www.googleapis.com/64.233.188.95:443 with timeout 0
+DEBUG   2021-01-23 11:40:45,535 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+DEBUG   2021-01-23 11:40:45,535 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+DEBUG   2021-01-23 11:40:45,536 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Starting handshake
+DEBUG   2021-01-23 11:40:45,754 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  - Secure session established
+DEBUG   2021-01-23 11:40:45,754 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated protocol: TLSv1.2
+DEBUG   2021-01-23 11:40:45,755 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+DEBUG   2021-01-23 11:40:45,755 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer principal: CN=upload.video.google.com, O=Google LLC, L=Mountain View, ST=California, C=US
+DEBUG   2021-01-23 11:40:45,756 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  peer alternative names: [upload.video.google.com, *.clients.google.com, *.docs.google.com, *.drive.google.com, *.gdata.youtube.com, *.googleapis.com, *.photos.google.com, *.upload.google.com, *.upload.youtube.com, *.youtube-3rd-party.com, bg-call-donation-alpha.goog, bg-call-donation-canary.goog, bg-call-donation-dev.goog, bg-call-donation.goog, upload.google.com, upload.youtube.com, uploads.stage.gdata.youtube.com]
+DEBUG   2021-01-23 11:40:45,756 [http-nio-8084-exec-9] org.apache.http.conn.ssl.SSLConnectionSocketFactory  -  issuer principal: CN=GTS CA 1O1, O=Google Trust Services, C=US
+DEBUG   2021-01-23 11:40:45,759 [http-nio-8084-exec-9] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 192.168.1.16:53819<->64.233.188.95:443
+DEBUG   2021-01-23 11:40:45,759 [http-nio-8084-exec-9] org.apache.http.impl.execchain.MainClientExec  - Executing request GET /oauth2/v1/userinfo?access_token=ya29.A0AfH6SMAGzy7M-jVwgGORhjAwoq-b6QznJWGTu1ljoDX1P8JEmS1XfEJV2kfJgWSAn6XEbfoxRTClzoyhxh83SMJlqPhngDGleV1RkKrC7vNthF7Cd2a2dvytHhfJePGFpZShQylN4rI31rKRjAwBw_zmhTKf HTTP/1.1
+DEBUG   2021-01-23 11:40:45,759 [http-nio-8084-exec-9] org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+DEBUG   2021-01-23 11:40:45,760 [http-nio-8084-exec-9] org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+DEBUG   2021-01-23 11:40:45,760 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 >> GET /oauth2/v1/userinfo?access_token=ya29.A0AfH6SMAGzy7M-jVwgGORhjAwoq-b6QznJWGTu1ljoDX1P8JEmS1XfEJV2kfJgWSAn6XEbfoxRTClzoyhxh83SMJlqPhngDGleV1RkKrC7vNthF7Cd2a2dvytHhfJePGFpZShQylN4rI31rKRjAwBw_zmhTKf HTTP/1.1
+DEBUG   2021-01-23 11:40:45,760 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 >> Host: www.googleapis.com
+DEBUG   2021-01-23 11:40:45,761 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 >> Connection: Keep-Alive
+DEBUG   2021-01-23 11:40:45,761 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+DEBUG   2021-01-23 11:40:45,761 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+DEBUG   2021-01-23 11:40:45,761 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 >> "GET /oauth2/v1/userinfo?access_token=ya29.A0AfH6SMAGzy7M-jVwgGORhjAwoq-b6QznJWGTu1ljoDX1P8JEmS1XfEJV2kfJgWSAn6XEbfoxRTClzoyhxh83SMJlqPhngDGleV1RkKrC7vNthF7Cd2a2dvytHhfJePGFpZShQylN4rI31rKRjAwBw_zmhTKf HTTP/1.1[\r][\n]"
+DEBUG   2021-01-23 11:40:45,761 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 >> "Host: www.googleapis.com[\r][\n]"
+DEBUG   2021-01-23 11:40:45,761 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2021-01-23 11:40:45,762 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+DEBUG   2021-01-23 11:40:45,762 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2021-01-23 11:40:45,762 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 >> "[\r][\n]"
+DEBUG   2021-01-23 11:40:45,854 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Date: Sat, 23 Jan 2021 04:40:46 GMT[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Vary: Origin[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Vary: X-Origin[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Vary: Referer[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Server: ESF[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+DEBUG   2021-01-23 11:40:45,855 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0x1f][\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0x8b][\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0x8][\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,856 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,857 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,857 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,857 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,857 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,857 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,857 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "00000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,868 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,868 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "0000001[\r][\n]"
+DEBUG   2021-01-23 11:40:45,868 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0x2][\r][\n]"
+DEBUG   2021-01-23 11:40:45,868 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "b0[\r][\n]"
+DEBUG   2021-01-23 11:40:45,869 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0xff]M[0x8c][0xbd][0xe][0x82]0[0x18]Ew[0x9e][0x82]tVj+[0x94][0x9f]I[0x6][0x6][0x13][0x7][0x89][0xee][0xa6][0x81][0x8f]R[0x3]m[0x3]-[0xc6][0x18][0xdf][0xdd]T[0xa3][0xf1]N7[0xb9][0xe7][0x9e]G[0x10][0x86]H[0xb6][0xa8][0x8][0x11]![0x94]dY[0x92][0xb2][0x98][0xb1]$[0xa3]9#[0x94][0x12][0xb4][0xf2][0x0][0x8c]\[0xe][0x9e]Q[0xc2][0xdd]A-\[\r][0x8e]+[0x12]SBv[0xc2]oQ[0xa3][0xc7][0xf][0xba][0xc0]$;[0x9][0xed][0xe5][0xfb][0xb1][0x93][0x83][0xf7]bdc[0xdd][0x4]^[0xd3][k[0xe6][0x2][0xe3][0xa1][0xdf]FBk1[0x80][0x9b]aj[0xb4][0xb2][0xa0][0xac]w[0xe1][0xf5]1N[0xab]M[0xc5]G[0x9d][0xd7][0xb8][0xfc]e[0xff][0xd7]K|:[0xdf]Zv[0xa8]T[0x97][0xd4][0xd8][0xf4][0xda][0xea][0xe8]j[0x4][\n]"
+DEBUG   2021-01-23 11:40:45,869 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[0x9e][0xc1][0xb][0x16][0x1d][0xa9]6[0xd6][0x0][0x0][0x0][\r][\n]"
+DEBUG   2021-01-23 11:40:45,869 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << HTTP/1.1 200 OK
+DEBUG   2021-01-23 11:40:45,869 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Pragma: no-cache
+DEBUG   2021-01-23 11:40:45,869 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Date: Sat, 23 Jan 2021 04:40:46 GMT
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Content-Type: application/json; charset=UTF-8
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Vary: Origin
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Vary: X-Origin
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Vary: Referer
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Content-Encoding: gzip
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Server: ESF
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << X-XSS-Protection: 0
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << X-Frame-Options: SAMEORIGIN
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << X-Content-Type-Options: nosniff
+DEBUG   2021-01-23 11:40:45,870 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+DEBUG   2021-01-23 11:40:45,871 [http-nio-8084-exec-9] org.apache.http.headers  - http-outgoing-1 << Transfer-Encoding: chunked
+DEBUG   2021-01-23 11:40:45,871 [http-nio-8084-exec-9] org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+DEBUG   2021-01-23 11:40:45,872 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "0[\r][\n]"
+DEBUG   2021-01-23 11:40:45,872 [http-nio-8084-exec-9] org.apache.http.wire  - http-outgoing-1 << "[\r][\n]"
+DEBUG   2021-01-23 11:40:45,872 [http-nio-8084-exec-9] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 1][route: {s}->https://www.googleapis.com:443] can be kept alive indefinitely
+DEBUG   2021-01-23 11:40:45,929 [http-nio-8084-exec-9] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-1: set socket timeout to 0
+DEBUG   2021-01-23 11:40:45,929 [http-nio-8084-exec-9] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+ERROR   2021-01-23 11:42:32,030 [http-nio-8084-exec-9] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\OneDrive\Documents\NetBeansProjects\J3.L.P0013. Hana Shop-600\build\web\images (Access is denied)
+ERROR   2021-01-25 12:15:50,349 [http-nio-8084-exec-2] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\AppData\Roaming\NetBeans\8.2\apache-tomcat-8.0.27.0_base\webapps\J3.L.P0013._Hana_Shop-600\images (Access is denied)
+ERROR   2021-01-29 06:59:52,639 [http-nio-8084-exec-2] controller.LoginController  - java.lang.NullPointerException
+ERROR   2021-01-29 07:09:14,581 [http-nio-8084-exec-5] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\AppData\Roaming\NetBeans\8.2\apache-tomcat-8.0.27.0_base\webapps\J3.L.P0013._Hana_Shop-600\images (Access is denied)
+ERROR   2021-01-29 07:09:27,312 [http-nio-8084-exec-6] controller.UpdateFoodController  - java.io.FileNotFoundException: C:\Users\PC\AppData\Roaming\NetBeans\8.2\apache-tomcat-8.0.27.0_base\webapps\J3.L.P0013._Hana_Shop-600\images (Access is denied)
+ERROR   2021-03-17 07:55:23,809 [http-nio-8084-exec-51] controller.LoginController  - java.lang.NullPointerException
